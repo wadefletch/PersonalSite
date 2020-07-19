@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply antialiased text-gray-800 bg-gray-100 leading-relaxed ;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+}
+
+a {
+    @apply underline;
+}
+
+h1 {
+    @apply font-bold tracking-wide leading-loose text-4xl text-gray-700;
+}
+
+a:hover {
+    @apply cursor-pointer;
+}
+
+.ease {
+    @apply transition ease-in-out duration-100;
+}
+
+div > p {
+    @apply mb-4 relative;
+}
+
+article > p {
+    @apply my-1 relative;
+}
+
+article {
+    @apply border-l-2 border-gray-400 pl-4 mb-3;
+}
+
+.list-dash {
+    list-style-type: "-  ";
+}
+
+ul {
+    @apply list-dash ml-6;
+}
+
+.dates {
+    @apply text-xs uppercase tracking-wide;
+}
+
+@tailwind utilities;
