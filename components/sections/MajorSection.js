@@ -23,7 +23,7 @@ function MajorSection(props) {
         <div className="flex flex-col">
             <button className={ `cursor-pointer py-1 flex items-center focus:outline-none border-none ${ setActive }` } onClick={ toggleAccordion }>
                 <div className="font-semibold flex-1 text-left text-2xl text-gray-600">{ props.title }</div>
-                <div className="mr-2 text-gray-600 text-sm">{ props.subtitle }</div>
+                <div className="hidden sm:inline mr-2 text-gray-600 text-sm">{ props.subtitle }</div>
                 <FontAwesomeIcon icon={faChevronLeft} className={ `${ setRotate } `+' text-sm text-gray-600 mr-1' }/>
             </button>
             <div

@@ -23,7 +23,7 @@ export default function Home() {
                 <div className="flex md:flex-col
                 text-right text-gray-600 font-medium
                 sticky top-0
-                mr-4
+                mr-6 mt-6
                 transform rotate-90 md:rotate-0 origin-top-left"
                      style={ {'top': '1rem'} }>
                     <a href="#About" className="md:mt-4 block mb-3 mr-3 no-underline transform">About</a>
