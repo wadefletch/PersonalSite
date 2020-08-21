@@ -6,12 +6,11 @@ export class Currently extends Component {
         return (
             <Section title="Currently" id="Currently">
                 <p>
-                    Since mid-March I've been at home in South Carolina with my family amidst the Coronavirus pandemic. I'm also a remote SWE Intern for <a href="https://urxcommunity.com">URx</a>, a community of university recruiters<sup>3</sup>.
+                    I'm back in Indiana for hybrid classes. I'm also a UI for <a href="https://luddy.indiana.edu/academics/courses/class/iub-fall-2020-csci-h200">CSCI-H 200</a>. Additionally, I'm a remote SWE Intern for <a href="https://urxcommunity.com">URx</a>, a community of university recruiters.
                 </p>
                 <div className="text-xs text-gray-600">
                     <div>
-                        <sup style={{marginRight: "2px"}}>3</sup>
-                        I'm working with the founder to democratize access to entry-level tech positions.
+
                     </div>
                 </div>
             </Section>

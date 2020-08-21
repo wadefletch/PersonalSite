@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -24,11 +24,11 @@ function MajorSection(props) {
             <button className={ `cursor-pointer py-1 flex items-center focus:outline-none border-none ${ setActive }` } onClick={ toggleAccordion }>
                 <div className="font-semibold flex-1 text-left text-2xl text-gray-600">{ props.title }</div>
                 <div className="hidden sm:inline mr-2 text-gray-600 text-sm">{ props.subtitle }</div>
-                <FontAwesomeIcon icon={faChevronLeft} className={ `${ setRotate } `+' text-sm text-gray-600 mr-1' }/>
+                <FontAwesomeIcon icon={ faChevronLeft } className={ `${ setRotate } ` + ' text-sm text-gray-600 mr-1' }/>
             </button>
             <div
                 ref={ content }
-                style={ {maxHeight: `${ setHeight }`, transition: "max-height 500ms ease"} }
+                style={ { maxHeight: `${ setHeight }`, transition: "max-height 500ms ease" } }
                 className="overflow-auto"
             >
                 <div className="pb-3 text-gray-700 text-sm">

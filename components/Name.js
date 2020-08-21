@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import { Section } from "./Section";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export class Name extends Component {
     render() {

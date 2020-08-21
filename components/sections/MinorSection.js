@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef, useState } from "react";
 import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -24,12 +24,12 @@ function MinorSection(props) {
     return (
         <div className="flex flex-col">
             <button className={ `cursor-pointer pb-1 flex items-center focus:outline-none border-none ${ setActive }` } onClick={ toggleAccordion }>
-                <div className="flex-1 text-left text-sm text-gray-600">{`${ setShow } `+ props.title }</div>
-                <FontAwesomeIcon icon={faChevronLeft} className={ `${ setRotate } `+' text-gray-500 mr-1' }/>
+                <div className="flex-1 text-left text-sm text-gray-600">{ `${ setShow } ` + props.title }</div>
+                <FontAwesomeIcon icon={ faChevronLeft } className={ `${ setRotate } ` + ' text-gray-500 mr-1' }/>
             </button>
             <div
                 ref={ content }
-                style={ {maxHeight: `${ setHeight }`, transition: "max-height 150ms ease"} }
+                style={ { maxHeight: `${ setHeight }`, transition: "max-height 150ms ease" } }
                 className="overflow-auto"
             >
                 <div className="text-gray-600 text-xs py-1">

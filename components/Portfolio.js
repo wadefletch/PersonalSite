@@ -120,9 +120,13 @@ export class Portfolio extends Component {
                         <ul>
                             <li>Founder's Scholar&nbsp;<em>(our equivalent of a Dean's List)</em></li>
                         </ul>
+                        <div className="font-semibold mt-2">Teaching</div>
+                        <ul>
+                            <li><a href="https://luddy.indiana.edu/academics/courses/class/iub-fall-2020-csci-h200">CSCI-H 200 Intro to Computers and Programming, Honors</a><br/><em>Undergraduate Instructor</em></li>
+                        </ul>
                         <div className="font-semibold mt-2">Organizations</div>
                         <ul>
-                            <li><a href="https://csclub.sice.indiana.edu/">Computer Science Club at Indiana University</a><br/><em>Co-Director of Curriculum Development (Incoming Vice President)</em></li>
+                            <li><a href="https://csclub.sice.indiana.edu/">Computer Science Club at Indiana University</a><br/><em>Vice-President (Former Co-Director of Curriculum Development)</em></li>
                             <li><a href="https://iujur.iu.edu/">Indiana University Journal of Undegraduate Research (IUJUR)</a><br/><em>Student Editorial Board, Applied Sciences</em></li>
                             <li><a href="https://ecmg.us">Endowment Consulting and Management Group (ECMG)</a><br/><em>International Equities Analyst (Incoming Quant PM)</em></li>
                             <li><a href="https://www.indianamun.com/">Indiana Model United Nations (IndianaMUN)</a><br/><em>Travel Team Competitor (General Assembly)</em></li>
@@ -178,7 +182,7 @@ export class Portfolio extends Component {
                     </MinorSection>
                     <div className="text-xs text-gray-600">
                         <div>
-                            <sup style={{marginRight: "2px"}}>4</sup>
+                            <sup style={ { marginRight: "2px" } }>4</sup>
                             I imagine COVID-19 will make this difficult.
                         </div>
                     </div>
