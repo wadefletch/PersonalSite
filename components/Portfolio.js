@@ -12,6 +12,11 @@ export class Portfolio extends Component {
                 <MajorSection title="Projects" subtitle="CovIntern, InternAlerts, and more">
                     <article>
                         <div className="dates">May 2020 - Present</div>
+                        <div className="mb-2"><strong>TalentBoard</strong></div>
+                        <div>TalentBoard allows students to use <em>one</em> technical assessment and <em>one</em> application to apply to internships in just a few clicks, reducing cost for recruiters and saving time for students. It's built with <a href="https://www.djangoproject.com/">Django</a> and <a href="https://tailwindcss.com/">Tailwind CSS</a>, in collaboration with <a href="https://urxcommunity.com/">URx</a>.</div>
+                    </article>
+                    <article>
+                        <div className="dates">May 2020 - Present</div>
                         <div className="mb-2"><strong>InternAlerts</strong> &mdash; <a href="https://internalerts.io">site</a></div>
                         <div>InternAlerts tracks more than 50 job boards for the posting of new intern roles. When an application opens, the members tracking it get an email. It's built with <a href="https://github.com/zeit/next.js">Next.js</a> on the frontend and a collection of microservices using <a href="https://github.com/serverless/serverless">Serverless Framework</a> on the backend.</div>
                     </article>
@@ -20,6 +25,7 @@ export class Portfolio extends Component {
                         <div className="mb-2"><strong>CovIntern</strong> &mdash; <a href="https://covintern.com">site</a></div>
                         <p>
                             CovIntern aggregates remote internships for university and secondary students staying at home quarantining amidst the 2020 COVID-19 global pandemic. The site has helped over 100k unique users in 100+ countries. It has also been shared by the career centers of 50 colleges and universities, and it has been featured in&nbsp;
+                            <a href="https://www.morningbrew.com/daily/stories/2020/07/31/get-internship-covid">Morning Brew</a>,&nbsp;
                             <a href="https://www.marketwatch.com/story/what-pandemic-how-goldman-sachs-and-amazon-may-bring-the-office-home-for-these-interns-2020-04-23">Marketwatch</a>,&nbsp;
                             <a href="https://www.boston.com/jobs/job-doc/2020/05/04/internship-cancelled-now-what">Boston.com</a>,&nbsp;
                             <a href="https://www.idsnews.com/article/2020/04/iu-students-navigate-summer-internships-remote-coronavirus">IDS</a>,&nbsp;
@@ -28,10 +34,6 @@ export class Portfolio extends Component {
                         </p>
                         <MinorSection title="CovIntern in Marketwatch">
                             <p className="has-text-grey">"With internships at companies from Disney to Airbnb being canceled, demand for those remaining is high. So Wade Fletcher, a first-year computer science and finance student at Indiana University, created a database of remote internships, called CovIntern. Looking for an internship of his own, he saw the need for an easy way to browse opportunities. The site, showcasing good internships and substitutes unaffected by the crisis, has seen over 60,000 users in the three weeks since he shared it with his LinkedIn network. 'My post has like 150,000 views or something ridiculous,' he said." &mdash; <i>Archie Mitchell, writing for <a href="https://www.marketwatch.com/story/what-pandemic-how-goldman-sachs-and-amazon-may-bring-the-office-home-for-these-interns-2020-04-23">Marketwatch</a></i></p>
-                        </MinorSection>
-                        <MinorSection title="CovIntern in IDS">
-                            <p className="has-text-grey">"IU freshman Wade Fletcher said said he knew finding internships was going to be a problem for students, so he created an aggregator, which is a database that has remote internship listings, called Covintern. Fletcher said he posted the aggregator on Linkedin and found and uploaded the first 20 internship offers to the aggregator. Recruiters can email him to update the list or they can go into the website and directly list a job on it. 'At the time of the extended spring break, I still did not have an internship,' Fletcher said. 'I knew that was a problem other students were going to experience too.' Since the creation of CovIntern, Fletcher has been hired to do software engineering remotely. He said he hopes CovIntern will help other students to find internships as well. 'I’m glad I’ve been able to help people during this weird time,' Fletcher said."
-                                &mdash; <i>Ben Price, writing for the <a href="https://www.idsnews.com/article/2020/04/iu-students-navigate-summer-internships-remote-coronavirus">Indiana Daily Student</a></i></p>
                         </MinorSection>
                         <MinorSection title="more people using CovIntern">
                             <p><a href="https://www.thesantaclara.org/blog/students-see-career-plans-altered-amid-covid-19">The Santa Clara</a>: "Covintern.com, developed by a student at Indiana University, serves to provide a crowdsourced list of remote internships in a wide variety of fields, including non-profit work, graphic design, data science and marketing. "</p>
@@ -114,7 +116,7 @@ export class Portfolio extends Component {
                 <MajorSection title="Academics" subtitle="classes, awards, organizations">
                     <div className="mb-1 text-base"><strong>Indiana University</strong> &mdash; undergraduate &mdash; class of 2023</div>
                     <article>
-                        <p>I'm working on dual degrees, a B.S. in Computer Science and a B.S.B. in Finance. Unfortunately, IU doesn't have a formal dual-degree program, but my IB Diploma from high school earned me enough transfer credit to make this possible. I've also augmented my coursework with additional classes at <a href="https://www.ivytech.edu/bloomington/">Ivy Tech</a> community college.</p>
+                        <p>I'm working on dual degrees, a B.S. in Computer Science and a B.S.B. in Finance. Unfortunately, IU doesn't have a formal dual-degree program, but my IB Diploma from high school earned me enough transfer credit to make this possible within 4 years.</p>
                         <p className="font-semibold mt-2">GPA 4.0</p>
                         <div className="font-semibold mt-2">Awards</div>
                         <ul>
@@ -147,7 +149,7 @@ export class Portfolio extends Component {
                     </article>
                     <article>
                         <p className="dates">December 2017 - February 2020</p>
-                        <p><a href="https://scoretwo.com/"><strong>ScoreTwo</strong></a>: founded a convergent media company focused on athletics; named SC Young Entrepreneur of the Year in 2019.</p>
+                        <p><a href="https://scoretwo.com/"><strong>ScoreTwo</strong></a>: founded a convergent media company focused on athletics; named SC Young Entrepreneur of the Year in 2019. <em>Exited via acquisition in 2020.</em></p>
                         <MinorSection title="more about ScoreTwo">
                             <ul>
                                 <li>I started ScoreTwo while still a student in the Richland Northeast Convergence Media magnet program. At its peak, I was quarterbacking 5 part-time employees working with top prep athletics programs travelling across the state.</li>

@@ -8,7 +8,7 @@ import { Footer } from "../components/Footer";
 
 export default function Home() {
     return (
-        <div className="mx-8 sm:mx-16 md:mx-20 lg:mx-32">
+        <div className="mx-8 sm:mx-16 md:mx-20 lg:mx-56">
             <Head>
                 <title>Wade Fletcher</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
