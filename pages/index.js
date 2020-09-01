@@ -12,6 +12,7 @@ export default function Home() {
             <Head>
                 <title>Wade Fletcher</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+                <meta name="description" content="Wade Fletcher is a student and entrepreneur but most of all, a builder. Currently building UndercoverVC: a new kind of venture scout network." />
             </Head>
             <div className="flex">
                 <div className="text-right mr-8 w-16 hidden md:block">&nbsp;</div>
