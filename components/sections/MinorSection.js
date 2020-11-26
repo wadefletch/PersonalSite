@@ -24,7 +24,7 @@ function MinorSection(props) {
     return (
         <div className="flex flex-col">
             <button className={ `cursor-pointer pb-1 flex items-center focus:outline-none border-none ${ setActive }` } onClick={ toggleAccordion }>
-                <div className="flex-1 text-left text-sm text-gray-600">{ `${ setShow } ` + props.title }</div>
+                <div className="flex-1 text-left text-sm text-gray-400">{ `${ setShow } ` + props.title }</div>
                 <FontAwesomeIcon icon={ faChevronLeft } className={ `${ setRotate } ` + ' text-gray-500 mr-1' }/>
             </button>
             <div
@@ -32,7 +32,7 @@ function MinorSection(props) {
                 style={ { maxHeight: `${ setHeight }`, transition: "max-height 150ms ease" } }
                 className="overflow-auto"
             >
-                <div className="text-gray-600 text-xs py-1">
+                <div className="text-gray-400 text-xs py-1">
                     { props.children }
                 </div>
             </div>

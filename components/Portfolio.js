@@ -7,23 +7,23 @@ export class Portfolio extends Component {
     render() {
         return (
             <Section title="Portfolio" id="Portfolio">
-                <p>I work on a wide array of projects, but lately my focus has been on university recruiting, both because of the surprise popularity of <a href="https://covintern.com/jobs">CovIntern</a> and my internship with <a href="https://urxcommunity.com">URx</a>.</p>
+                <p>I work on a wide array of projects, but lately my focus has been on venture capital for students and Gen-Z, through my work with <a href="//undercover.vc">UndercoverVC</a>.</p>
 
-                <MajorSection title="Projects" subtitle="CovIntern, InternAlerts, and more">
+                <MajorSection title="Projects" subtitle="UndercoverVC, CovIntern, and more">
                     <article>
-                        <div className="dates">May 2020 - Present</div>
-                        <div className="mb-2"><strong>TalentBoard</strong></div>
-                        <div>TalentBoard allows students to use <em>one</em> technical assessment and <em>one</em> application to apply to internships in just a few clicks, reducing cost for recruiters and saving time for students. It's built with <a href="https://www.djangoproject.com/">Django</a> and <a href="https://tailwindcss.com/">Tailwind CSS</a>, in collaboration with <a href="https://urxcommunity.com/">URx</a>.</div>
+                        <div className="dates">August 2020 - Present</div>
+                        <div className="title"><strong>UndercoverVC</strong> &mdash; <a href="//undercover.vc">site</a></div>
+                        <p className="body">We're building a network of venture funds and university students to bring access to campuses historically underrepresented in venture capital programs. We're currently interviewing for our first class of 40 campus fellows.</p>
                     </article>
                     <article>
-                        <div className="dates">May 2020 - Present</div>
-                        <div className="mb-2"><strong>InternAlerts</strong> &mdash; <a href="https://internalerts.io">site</a></div>
-                        <div>InternAlerts tracks more than 50 job boards for the posting of new intern roles. When an application opens, the members tracking it get an email. It's built with <a href="https://github.com/zeit/next.js">Next.js</a> on the frontend and a collection of microservices using <a href="https://github.com/serverless/serverless">Serverless Framework</a> on the backend.</div>
+                        <div className="dates">May 2020 - August 2020</div>
+                        <div className="title"><strong>TalentBoard</strong> &mdash; <a href="//talentboard.io">site</a></div>
+                        <p className="body"><em>(URx Internship Project)</em> TalentBoard allows students to use <em>one</em> technical assessment and <em>one</em> application to apply to internships in just a few clicks, reducing cost for recruiters and saving time for students. It's built with <a href="https://www.djangoproject.com/">Django</a> and <a href="https://tailwindcss.com/">Tailwind CSS</a>. <a href="//talentboard.io/companies/">It's used by Netflix, Facebook, Robinhood, Cloudera, and Greylock Partners, among others.</a></p>
                     </article>
                     <article>
-                        <div className="dates">March 2020 - Present</div>
-                        <div className="mb-2"><strong>CovIntern</strong> &mdash; <a href="https://covintern.com">site</a></div>
-                        <p>
+                        <div className="dates">March 2020 - August 2020</div>
+                        <div className="title"><strong>CovIntern</strong> &mdash; <a href="https://covintern.com">site</a>, <a href="//github.com/wadefletch/covintern">source</a></div>
+                        <p className="body">
                             CovIntern aggregates remote internships for university and secondary students staying at home quarantining amidst the 2020 COVID-19 global pandemic. The site has helped over 100k unique users in 100+ countries. It has also been shared by the career centers of 50 colleges and universities, and it has been featured in&nbsp;
                             <a href="https://www.morningbrew.com/daily/stories/2020/07/31/get-internship-covid">Morning Brew</a>,&nbsp;
                             <a href="https://www.marketwatch.com/story/what-pandemic-how-goldman-sachs-and-amazon-may-bring-the-office-home-for-these-interns-2020-04-23">Marketwatch</a>,&nbsp;
@@ -107,49 +107,55 @@ export class Portfolio extends Component {
 
                     <MinorSection title="additional projects">
                         <ul>
-                            <li>Counterpoint &mdash; a music library management system for the choir my mother conducts.</li>
+                            <li><a href="https://internalerts.io">InternAlerts</a>&nbsp;&mdash; tracks more than 50 job boards for the posting of new intern roles. When an application opens, the members tracking it get an email.</li>
+                            <li><a href="https://github.com/wadefletch/python-ergast">python-ergast</a>&nbsp;&mdash; ORM-ing 60 years of F1 lap data with python.</li>
+                            <li><a href="https://github.com/csclubiu/ChatbotWorkshop">HotelBot</a>&nbsp;&mdash; part of a CSClub@IU workshop I did with Brady Anderson on chatbots for business.</li>
                             <li><a href="https://munrank.com/">MUNrank.com</a>&nbsp;&mdash; a new ranking engine for collegiate Model United Nations. (Never figured out how to get conference data consistently.)</li>
                         </ul>
                     </MinorSection>
                 </MajorSection>
 
                 <MajorSection title="Academics" subtitle="classes, awards, organizations">
-                    <div className="mb-1 text-base"><strong>Indiana University</strong> &mdash; undergraduate &mdash; class of 2023</div>
+                    <div className="mb-1 text-base text-gray-200"><strong>Indiana University</strong> &mdash; undergraduate &mdash; class of 2023</div>
                     <article>
-                        <p>I'm working on dual degrees, a B.S. in Computer Science and a B.S.B. in Finance. Unfortunately, IU doesn't have a formal dual-degree program, but my IB Diploma from high school earned me enough transfer credit to make this possible within 4 years.</p>
-                        <p className="font-semibold mt-2">GPA 4.0</p>
-                        <div className="font-semibold mt-2">Awards</div>
-                        <ul>
-                            <li>Founder's Scholar&nbsp;<em>(our equivalent of a Dean's List)</em></li>
-                        </ul>
-                        <div className="font-semibold mt-2">Teaching</div>
-                        <ul>
-                            <li><a href="https://luddy.indiana.edu/academics/courses/class/iub-fall-2020-csci-h200">CSCI-H 200 Intro to Computers and Programming, Honors</a><br/><em>Undergraduate Instructor</em></li>
-                        </ul>
-                        <div className="font-semibold mt-2">Organizations</div>
-                        <ul>
-                            <li><a href="https://csclub.sice.indiana.edu/">Computer Science Club at Indiana University</a><br/><em>Vice-President (Former Co-Director of Curriculum Development)</em></li>
-                            <li><a href="https://iujur.iu.edu/">Indiana University Journal of Undegraduate Research (IUJUR)</a><br/><em>Student Editorial Board, Applied Sciences</em></li>
-                            <li><a href="https://ecmg.us">Endowment Consulting and Management Group (ECMG)</a><br/><em>International Equities Analyst (Incoming Quant PM)</em></li>
-                            <li><a href="https://www.indianamun.com/">Indiana Model United Nations (IndianaMUN)</a><br/><em>Travel Team Competitor (General Assembly)</em></li>
-                        </ul>
-                        <div className="font-semibold mt-2">Selected Coursework</div>
-                        <ul>
-                            <li>CSCI-H 200 Intro to Computers and Programming, Honors</li>
-                            <li>CSCI-C 241 Discrete Structures</li>
-                            <li>CSCI-H 212 Software Systems, Honors</li>
-                        </ul>
+                        <div className="body">
+                            <p>I'm working on dual degrees, a B.S. in Computer Science and a B.S.B. in Finance. Unfortunately, IU doesn't have a formal dual-degree program, but my IB Diploma from high school earned me enough transfer credit to make this possible within 4 years.</p>
+                            <p className="font-semibold mt-2">GPA 4.0</p>
+                            <div className="font-semibold mt-2 text-gray-300">Awards</div>
+                            <ul>
+                                <li>Founder's Scholar&nbsp;<em>(our equivalent of a Dean's List)</em></li>
+                                <li>Comp Science Student Scholarship &mdash; awarded for being a top student in the CS major track</li>
+                                <li>Rev. Dr. Karen Layman Gift of Hope Scholarship &mdash; <em>"created to recognize leaders and potential leaders in the United Methodist Church."</em></li>
+                            </ul>
+                            <div className="font-semibold mt-2 text-gray-300">Teaching</div>
+                            <ul>
+                                <li><a href="https://luddy.indiana.edu/academics/courses/class/iub-fall-2020-csci-h200">CSCI-H 200 Intro to Computers and Programming, Honors</a><br/><em>Undergraduate Instructor</em></li>
+                            </ul>
+                            <div className="font-semibold mt-2 text-gray-300">Organizations</div>
+                            <ul>
+                                <li><a href="https://csclub.sice.indiana.edu/">Computer Science Club at Indiana University</a><br/><em>Vice-President (Former Co-Director of Curriculum Development)</em></li>
+                                <li><a href="https://iujur.iu.edu/">Indiana University Journal of Undegraduate Research (IUJUR)</a><br/><em>Student Editorial Board, Applied Sciences</em></li>
+                                <li><a href="https://ecmg.us">Endowment Consulting and Management Group (ECMG)</a><br/><em>International Equities Analyst (Incoming Quant PM)</em></li>
+                                <li><a href="https://www.indianamun.com/">Indiana Model United Nations (IndianaMUN)</a><br/><em>Travel Team Competitor (General Assembly)</em></li>
+                            </ul>
+                            <div className="font-semibold mt-2 text-gray-300">Selected Coursework</div>
+                            <ul>
+                                <li>CSCI-H 200 Intro to Computers and Programming, Honors</li>
+                                <li>CSCI-C 241 Discrete Structures</li>
+                                <li>CSCI-H 212 Software Systems, Honors</li>
+                            </ul>
+                        </div>
                     </article>
                 </MajorSection>
 
                 <MajorSection title="Professional" subtitle="URx, ScoreTwo, Wallick Investments">
                     <article>
-                        <p className="dates">April 2020 - Present</p>
-                        <p><a href="https://www.urxcommunity.com/"><strong>URx</strong></a>: creating a new platform for technical assessment in university recruiting.</p>
+                        <p className="dates">May 2020 - August 2020</p>
+                        <p className="body"><a href="https://www.urxcommunity.com/" className="title"><strong>URx</strong></a>: created a new platform for technical assessment in university recruiting used by Facebook, Netflix, eBay, and Greylock.</p>
                     </article>
                     <article>
                         <p className="dates">December 2017 - February 2020</p>
-                        <p><a href="https://scoretwo.com/"><strong>ScoreTwo</strong></a>: founded a convergent media company focused on athletics; named SC Young Entrepreneur of the Year in 2019. <em>Exited via acquisition in 2020.</em></p>
+                        <p className="body"><a href="https://scoretwo.com/" className="title"><strong>ScoreTwo</strong></a>: founded a convergent media company focused on athletics; named SC Young Entrepreneur of the Year in 2019. <em>Exited via acquisition in 2020.</em></p>
                         <MinorSection title="more about ScoreTwo">
                             <ul>
                                 <li>I started ScoreTwo while still a student in the Richland Northeast Convergence Media magnet program. At its peak, I was quarterbacking 5 part-time employees working with top prep athletics programs travelling across the state.</li>
@@ -159,7 +165,7 @@ export class Portfolio extends Component {
                     </article>
                     <article>
                         <p className="dates">May 2019 - August 2019</p>
-                        <p><a href="https://www.wallickinvestments.com/"><strong>Wallick Investments</strong></a>: built a backtesting and automation suite (still) used to manage a $70MM+ portfolio.</p>
+                        <p className="body"><a href="https://www.wallickinvestments.com/" className="title"><strong>Wallick Investments</strong></a>: built a backtesting and automation suite (still) used to manage a $70MM+ portfolio.</p>
                         <MinorSection title="more about Wallick Investments">
                             <ul>
                                 <li>I worked one-on-one with a Junior Portfolio Manager to automate away hours of daily work monitoring portfolio performance and collecting relevant data on acquisition targets.</li>
@@ -170,19 +176,21 @@ export class Portfolio extends Component {
                     </article>
                 </MajorSection>
 
-                <MajorSection title="Miscellaneous" subtitle="competitions, skills, other stuff">
-                    <p>I am certified in artificial and natural face rock climbing and bouldering instruction (BSA <a href="https://filestore.scouting.org/filestore/pdf/C&C_Foundation_LI.pdf">COPE & Climbing Level I</a> and <a href="https://filestore.scouting.org/filestore/pdf/Climbing_LII.pdf">Climbing Level II</a>)</p>
-                    <p>I am comfortable programming in Python and Java, as well as the typical web technologies (HTML+JS+CSS). Lately I've been vibing with Django and Tailwind, as well as learning React.</p>
-                    <p>I won an <a href="https://theemmys.tv/nspa-2019-winners-announced/">Emmy</a> (well, a student Emmy) in 2019. <a href="https://en.wikipedia.org/wiki/Bill_Nye">Bill Nye</a> presented our category.</p>
-                    <p>I'm an <a href="https://en.wikipedia.org/wiki/Eagle_Scout_(Boy_Scouts_of_America)">Eagle Scout</a> in <a href="https://en.wikipedia.org/wiki/Boy_Scouts_of_America">BSA</a> Troop 202 and a <a href="https://en.wikipedia.org/wiki/Order_of_the_Arrow_honors_and_awards#Vigil_Honor">Vigil Honor</a> member of the <a href="https://en.wikipedia.org/wiki/Order_of_the_Arrow">Order of the Arrow</a>, Muscogee Lodge #221.</p>
-                    <p>I've some familiarity with hackathons&mdash;participating in more of them in the next year is one of my goals.<sup>4</sup></p>
+                <MajorSection title="More" subtitle="competitions, skills, other stuff">
+                    <div className="body">
+                        <p>I am certified in artificial and natural face rock climbing and bouldering instruction (BSA <a href="https://filestore.scouting.org/filestore/pdf/C&C_Foundation_LI.pdf">COPE & Climbing Level I</a> and <a href="https://filestore.scouting.org/filestore/pdf/Climbing_LII.pdf">Climbing Level II</a>)</p>
+                        <p>I am comfortable programming in Python and Java, as well as the typical web technologies (HTML+JS+CSS). Lately I've been vibing with Django and Tailwind, as well as learning React.</p>
+                        <p>I won an <a href="https://theemmys.tv/nspa-2019-winners-announced/">Emmy</a> (well, a student Emmy) in 2019. <a href="https://en.wikipedia.org/wiki/Bill_Nye">Bill Nye</a> presented our category.</p>
+                        <p>I'm an <a href="https://en.wikipedia.org/wiki/Eagle_Scout_(Boy_Scouts_of_America)">Eagle Scout</a> in <a href="https://en.wikipedia.org/wiki/Boy_Scouts_of_America">BSA</a> Troop 202 and a <a href="https://en.wikipedia.org/wiki/Order_of_the_Arrow_honors_and_awards#Vigil_Honor">Vigil Honor</a> member of the <a href="https://en.wikipedia.org/wiki/Order_of_the_Arrow">Order of the Arrow</a>, Muscogee Lodge #221.</p>
+                        <p>I've some familiarity with hackathons&mdash;participating in more of them in the next year is one of my goals.<sup>4</sup></p>
+                    </div>
                     <MinorSection title="hackathons and competitions">
                         <ul>
                             <li><strong>1st place @ Intel-OA Hackathon</strong>&nbsp;(Fall 2017): won first place in the Communications division in&nbsp;the inaugural <a href="http://event.oa-bsa.org/events/hackathon2017/">Intel-OA Hackathon</a> with <a href="https://github.com/wadefletch/NOACTS">NOACTS</a>.</li>
                             <li><strong>1st place @ CodeDay Columbia</strong> (Spring 2016): won first place in the Web division at <a href="https://www.codeday.org/columbia">CodeDay Columbia</a> with <a href="https://github.com/wadefletch/theforest">TheForest</a>.</li>
                         </ul>
                     </MinorSection>
-                    <div className="text-xs text-gray-600">
+                    <div className="footnotes">
                         <div>
                             <sup style={ { marginRight: "2px" } }>4</sup>
                             I imagine COVID-19 will make this difficult.

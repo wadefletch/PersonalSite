@@ -1,6 +1,6 @@
 {
   "name": "wadefletch",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next",
@@ -12,12 +12,12 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
-    "next": "9.5.0",
+    "autoprefixer": "^10.0.2",
+    "next": "^10.0.2",
+    "postcss": "^8.1.9",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "tailwindcss": "^2.0.1"
   },
-  "devDependencies": {
-    "postcss-preset-env": "^6.7.0",
-    "tailwindcss": "^1.4.6"
-  }
+  "devDependencies": {}
 }
