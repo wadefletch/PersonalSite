@@ -44,6 +44,9 @@ export default function Home() {
                     <Footer/>
                 </div>
             </div>
+
+            <script async defer src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+            <noscript><img src="https://queue.simpleanalyticscdn.com/noscript.gif" alt=""/></noscript>
         </div>
     )
 }
