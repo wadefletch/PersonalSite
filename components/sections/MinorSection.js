@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function MinorSection(props) {
     const [setActive, setActiveState] = useState("");
@@ -25,7 +23,9 @@ function MinorSection(props) {
         <div className="flex flex-col">
             <button className={ `cursor-pointer pb-1 flex items-center focus:outline-none border-none ${ setActive }` } onClick={ toggleAccordion }>
                 <div className="flex-1 text-left text-sm text-gray-400">{ `${ setShow } ` + props.title }</div>
-                <FontAwesomeIcon icon={ faChevronLeft } className={ `${ setRotate } ` + ' text-gray-500 mr-1' }/>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className={ `${ setRotate } ` + ' text-xl text-gray-500 mr-1 w-3' }>
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={ 2 } d="M15 19l-7-7 7-7"/>
+                </svg>
             </button>
             <div
                 ref={ content }
