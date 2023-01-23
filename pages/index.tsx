@@ -12,8 +12,18 @@ const Home: NextPage = () => {
         <title>Wade Fletcher</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='space-y-3 max-w-xl'>
-        <h1>Wade Fletcher</h1>
+      <main className='max-w-xl space-y-6'>
+        <div className='flex justify-between items-center'>
+          <h1>Wade Fletcher</h1>
+          <div className='h-8 flex gap-4 text-gray-300'>
+            <a href='//linkedin.com/in/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-800 transition duration-150'>
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a href='//twitter.com/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-400 transition duration-150'>
+              <FontAwesomeIcon icon={faTwitterSquare} />
+            </a>
+          </div>
+        </div>
         <p>
           I&apos;m a software engineer at{' '}
           <a href='//atmos.ai' target='_blank' rel='noreferrer'>
@@ -22,7 +32,7 @@ const Home: NextPage = () => {
           , building a platform for <a href='//www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp'>ESG</a> analytics.
         </p>
         <div>
-          <h3>Highlights</h3>
+          <h3>Previously</h3>
           <ul className='list-disc ml-4'>
             <li>
               Early-stage investing (intern) at{' '}
@@ -45,14 +55,6 @@ const Home: NextPage = () => {
           </a>
           .
         </p>
-        <div className='h-8 flex gap-4 text-gray-300'>
-          <a href='//linkedin.com/in/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-800 transition'>
-            <FontAwesomeIcon icon={faLinkedin} />
-          </a>
-          <a href='//twitter.com/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-400'>
-            <FontAwesomeIcon icon={faTwitterSquare} />
-          </a>
-        </div>
       </main>
     </div>
   );
