@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
 
 const Home: NextPage = () => {
   return (
@@ -10,14 +12,14 @@ const Home: NextPage = () => {
         <title>Wade Fletcher</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className='space-y-3 max-w-lg'>
+      <main className='space-y-3 max-w-xl'>
         <h1>Wade Fletcher</h1>
         <p>
           I&apos;m a software engineer at{' '}
           <a href='//atmos.ai' target='_blank' rel='noreferrer'>
             Atmos
           </a>
-          , building a platform for environmental, social, and governance metric reporting and improvement project recommendation.
+          , building a platform for <a href='//www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp'>ESG</a> analytics.
         </p>
         <div>
           <h3>Highlights</h3>
@@ -43,6 +45,14 @@ const Home: NextPage = () => {
           </a>
           .
         </p>
+        <div className='h-8 flex gap-4 text-gray-300'>
+          <a href='//linkedin.com/in/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-800 transition'>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href='//twitter.com/wadefletch' target='_blank' rel='noreferrer' className='block h-8 w-8 hover:text-sky-400'>
+            <FontAwesomeIcon icon={faTwitterSquare} />
+          </a>
+        </div>
       </main>
     </div>
   );
