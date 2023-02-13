@@ -69,7 +69,7 @@ const Home: NextPage = () => {
           Connect with me via email at{' '}
           <a
             href="mailto:hello@wadefletcher.com"
-            className="bg-gray-200 inline-block px-1 py-0.5 rounded font-mono text-sm font-normal no-underline"
+            className="sm:bg-gray-200 inline-block sm:px-1 sm:py-0.5 rounded sm:font-mono sm:text-sm sm:font-normal sm:no-underline"
           >
             hello at wadefletcher dot com
           </a>
