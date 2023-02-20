@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <Head>
         <title>{meta.title}</title>
 
-        <link rel="icon" href="/favicon.svg" />
+        <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
 
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
