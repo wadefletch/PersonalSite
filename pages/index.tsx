@@ -13,7 +13,7 @@ const Home: NextPage = () => {
     title: 'Wade Fletcher',
     description:
       'Wade Fletcher is a software engineer. He is currently working at Atmos, a startup in the ESG analytics space.',
-    // ogImage: '',
+    ogImage: '/og.png',
   };
 
   return (
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
-        {/* <meta property="og:image" content={meta.ogImage} /> */}
+        <meta property="og:image" content={meta.ogImage} />
       </Head>
 
       <HeaderLine />
