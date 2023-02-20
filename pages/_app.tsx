@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import { Inter } from '@next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,6 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
