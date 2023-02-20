@@ -13,14 +13,18 @@ const Home: NextPage = () => {
   const meta = {
     title: 'Wade Fletcher',
     description: 'Wade Fletcher is a software engineer located in <TBD>.',
+    // ogImage: '',
   };
 
   return (
     <>
       <Head>
+        <EmojiFavicon emoji="🌳" />
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
-        <EmojiFavicon emoji="🌳" />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        {/* <meta property="og:image" content={meta.ogImage} /> */}
       </Head>
 
       <HeaderLine />
