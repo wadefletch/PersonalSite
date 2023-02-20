@@ -2,20 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply overscroll-y-none;
+  }
+}
+
 @layer components {
-  h1 {
-    @apply text-2xl font-bold;
+  a {
+    @apply underline;
   }
 
   h2 {
-    @apply text-xl font-bold;
+    @apply font-bold text-2xl mt-10;
   }
 
-  h3 {
-    @apply text-lg font-bold;
+  details > summary {
+    list-style-type: '';
   }
 
-  a {
-    @apply underline font-semibold;
+  details[open] > summary {
+    list-style-type: '';
+  }
+
+  details[open] > summary:before {
+    transform: rotate(90deg);
   }
 }

@@ -1,82 +1,42 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faLinkedin,
-  faTwitterSquare,
-} from '@fortawesome/free-brands-svg-icons';
+
+import Contact from '../components/Contact';
+import EmojiFavicon from '../components/EmojiFavicon';
+import Footer from '../components/Footer';
+import HeaderLine from '../components/HeaderLine';
+import Hero from '../components/Hero';
+import Projects from '../components/Projects';
+import Work from '../components/Work';
 
 const Home: NextPage = () => {
+  const meta = {
+    title: 'Wade Fletcher',
+    description: 'Wade Fletcher is a software engineer located in <TBD>.',
+  };
+
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <>
       <Head>
-        <title>Wade Fletcher</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{meta.title}</title>
+        <meta name="description" content={meta.description} />
+        <EmojiFavicon emoji="🌳" />
       </Head>
-      <main className="max-w-xl space-y-6 p-4">
-        <div className="flex justify-between items-center">
-          <h1>Wade Fletcher</h1>
-          <div className="h-8 flex gap-4 text-gray-300">
-            <a
-              href="//linkedin.com/in/wadefletch"
-              target="_blank"
-              rel="noreferrer"
-              className="block h-8 w-8 hover:text-sky-800 transition duration-150"
-            >
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a
-              href="//twitter.com/wadefletch"
-              target="_blank"
-              rel="noreferrer"
-              className="block h-8 w-8 hover:text-sky-400 transition duration-150"
-            >
-              <FontAwesomeIcon icon={faTwitterSquare} />
-            </a>
-          </div>
-        </div>
-        <p>
-          I&apos;m a software engineer at{' '}
-          <a href="//atmos.ai" target="_blank" rel="noreferrer">
-            Atmos
-          </a>
-          , building a platform for{' '}
-          <a href="//www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp">
-            ESG
-          </a>{' '}
-          analytics.
-        </p>
-        <div>
-          <h3>Previously</h3>
-          <ul className="list-disc ml-4">
-            <li>
-              Early-stage investing intern at{' '}
-              <a href="//atentocapital.com" target="blank" rel="noreferrer">
-                Atento Capital
-              </a>
-            </li>
-            <li>
-              Computer Science and Finance (c/o 2023) at{' '}
-              <a href="//indiana.edu">Indiana University</a>
-            </li>
-            <li>
-              Former internship curator (for 165k students) via{' '}
-              <a href="//covintern.com">CovIntern</a>
-            </li>
-          </ul>
-        </div>
-        <p className="italic">
-          Connect with me via email at{' '}
-          <a
-            href="mailto:hello@wadefletcher.com"
-            className="sm:bg-gray-200 inline-block sm:px-1 sm:py-0.5 rounded sm:font-mono sm:text-sm sm:font-normal sm:no-underline"
-          >
-            hello at wadefletcher dot com
-          </a>
-          .
-        </p>
+
+      <HeaderLine />
+
+      <main className="mx-auto max-w-2xl text-gray-800 mt-10 px-10 pb-20 gap-5 flex flex-col">
+        <Hero />
+
+        <Projects />
+
+        <Work />
+
+        <Contact />
       </main>
-    </div>
+
+      <Footer />
+    </>
   );
 };
 
