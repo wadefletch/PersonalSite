@@ -20,7 +20,7 @@ const Projects = () => {
     },
     {
       name: 'Project Dalio',
-      href: '//covintern.com',
+      href: '//github.com/ecmgiu/projectdalio',
       description:
         "React/Firebase App used to manage reporting, analytics, and personnel for IU's only student-managed fund.",
     },
@@ -36,7 +36,7 @@ const Projects = () => {
             key={project.href}
             className="bg-gray-100 p-5 no-underline hover:scale-105 hover:bg-gray-200 transition"
             target="blank"
-            rel="_noreferrer"
+            rel="noopener noreferrer"
           >
             <h3 className="font-bold mb-2">{project.name}</h3>
             <p className="text-sm">{project.description}</p>
