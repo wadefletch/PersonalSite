@@ -36,7 +36,6 @@ const Projects = () => {
             key={project.href}
             className="bg-gray-100 p-5 no-underline hover:scale-105 hover:bg-gray-200 transition"
             target="blank"
-            rel="noopener noreferrer"
           >
             <h3 className="font-bold mb-2">{project.name}</h3>
             <p className="text-sm">{project.description}</p>

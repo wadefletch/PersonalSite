@@ -52,12 +52,7 @@ const Work = () => {
       {work.map((job) => (
         <article key={`${job.title}_${job.company}`}>
           <h3 className="font-bold text-lg">
-            <a
-              href={job.companyHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="no-underline"
-            >
+            <a href={job.companyHref} target="blank" className="no-underline">
               {job.company}
             </a>
           </h3>
