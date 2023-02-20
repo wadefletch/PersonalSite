@@ -12,7 +12,8 @@ import Work from '../components/Work';
 const Home: NextPage = () => {
   const meta = {
     title: 'Wade Fletcher',
-    description: 'Wade Fletcher is a software engineer located in <TBD>.',
+    description:
+      'Wade Fletcher is a software engineer. He is currently working at Atmos, a startup in the ESG analytics space.',
     // ogImage: '',
   };
 
