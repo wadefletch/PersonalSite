@@ -34,7 +34,7 @@ const Projects = () => {
           <a
             href={project.href}
             key={project.href}
-            className="bg-gray-100 p-5 no-underline hover:scale-105 hover:bg-gray-200 transition"
+            className="bg-gray-100 dark:bg-gray-700 p-5 no-underline hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             target="blank"
           >
             <h3 className="font-bold mb-2">{project.name}</h3>

@@ -31,7 +31,7 @@ const Home: NextPage = () => {
 
       <HeaderLine />
 
-      <main className="mx-auto max-w-2xl text-gray-800 mt-10 px-10 pb-20 gap-5 flex flex-col">
+      <main className="mx-auto max-w-2xl mt-10 px-10 pb-20 gap-5 flex flex-col">
         <Hero />
 
         <Projects />

@@ -58,10 +58,10 @@ const Work = () => {
           </h3>
           <div className="sm:flex sm:justify-between">
             <p>{job.title}</p>
-            <p className="text-gray-500">{job.time}</p>
+            <p className="text-gray-500 dark:text-gray-400">{job.time}</p>
           </div>
           {job.lines && (
-            <details className="text-sm text-gray-500">
+            <details className="text-sm text-gray-500 dark:text-gray-400">
               <summary className="group cursor-pointer">
                 See more{' '}
                 <span className="inline-block group-hover:translate-x-1 transition">
