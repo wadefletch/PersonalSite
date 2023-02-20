@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import Contact from '../components/Contact';
-import EmojiFavicon from '../components/EmojiFavicon';
 import Footer from '../components/Footer';
 import HeaderLine from '../components/HeaderLine';
 import Hero from '../components/Hero';
@@ -20,8 +19,10 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <EmojiFavicon emoji="🌳" />
         <title>{meta.title}</title>
+
+        <link rel="icon" href="/favicon.svg" />
+
         <meta name="description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:description" content={meta.description} />
