@@ -61,7 +61,7 @@ const Work = () => {
               {job.company}
             </a>
           </h3>
-          <div className="flex justify-between">
+          <div className="sm:flex sm:justify-between">
             <p>{job.title}</p>
             <p className="text-gray-500">{job.time}</p>
           </div>
