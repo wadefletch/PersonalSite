@@ -50,10 +50,9 @@ const Work = () => {
     <>
       <h2 data-content="Work">Work</h2>
       <p>
-        I&apos;m currently a software engineer at a venture-backed ESG software
-        startup. Prior to my current role, I spent a year at a venture fund,
-        mostly on a sourcing team. If you&apos;d like to learn more, please take
-        a look at my{' '}
+        Prior to my work as a software engineer, I spent a year at a venture
+        fund, mostly working on sourcing. If you&apos;d like to learn more,
+        please take a look at my{' '}
         <a href="//linkedin.com/in/wadefletch" target="blank" rel="_noreferrer">
           LinkedIn
         </a>
