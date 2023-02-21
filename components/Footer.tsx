@@ -13,22 +13,17 @@ const Footer = () => {
 
       <span>&#x2022;</span>
 
-      {commit ? (
-        <a
-          className="font-mono no-underline"
-          href={`https://github.com/wadefletch/wadefletcher.com/commit/${commit}`}
-        >
-          {commit.substring(0, 7)}
-        </a>
-      ) : (
-        <a
-          href="//github.com/wadefletch/wadefletcher.com"
-          target="blank"
-          className="no-underline"
-        >
-          Source
-        </a>
-      )}
+      <a
+        href={
+          commit
+            ? `https://github.com/wadefletch/wadefletcher.com/commit/${commit}`
+            : '//github.com/wadefletch/wadefletcher.com'
+        }
+        target="blank"
+        className="no-underline"
+      >
+        {commit ? commit.substring(0, 7) : 'Source'}
+      </a>
     </footer>
   );
 };

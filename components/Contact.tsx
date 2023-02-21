@@ -10,11 +10,11 @@ const Contact = () => (
       <a href="//linkedin.com/in/wadefletch">LinkedIn</a>,{' '}
       <a href="//github.com/wadefletch">GitHub</a>, and{' '}
       <a href="//news.ycombinator.com/user?id=wadefletch">HN</a>, I am{' '}
-      <span className="bg-gray-100 dark:bg-gray-700 p-1">wadefletch</span>.
+      <span className="bg-gray-100 dark:bg-gray-900 p-1">wadefletch</span>.
     </p>
     <p>
       You can also email me at{' '}
-      <span className="bg-gray-100 dark:bg-gray-700 p-1">
+      <span className="bg-gray-100 dark:bg-gray-900 p-1">
         hello at wadefletcher dot com
       </span>
       .

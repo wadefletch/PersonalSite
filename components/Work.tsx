@@ -62,7 +62,7 @@ const Work = () => {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="bg-gray-100 border border-gray-300 dark:bg-gray-700 overflow-hidden"
+          className="bg-gray-100 border border-gray-300 dark:border-gray-700 dark:bg-gray-900 overflow-hidden"
         >
           <div className="p-4">
             <div className="sm:flex sm:justify-between sm:items-start">
@@ -84,7 +84,7 @@ const Work = () => {
             </div>
           </div>
           {job.lines && (
-            <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 border-t border-gray-300 dark:bg-gray-600">
+            <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 border-gray-300 border-t dark:border-gray-700 dark:bg-gray-900">
               <summary className="group cursor-pointer px-4 py-2">
                 See more{' '}
                 <span className="inline-block group-hover:translate-x-1 transition">
