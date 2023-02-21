@@ -60,9 +60,9 @@ const Work = () => {
         .
       </p>
       {work.map((job) => (
-        <article
+        <div
           key={`${job.title}_${job.company}`}
-          className="bg-gray-100 dark:bg-gray-700"
+          className="bg-gray-100 dark:bg-gray-700 overflow-hidden"
         >
           <div className="p-4">
             <div className="sm:flex sm:justify-between sm:items-start">
@@ -98,7 +98,7 @@ const Work = () => {
               </ul>
             </details>
           )}
-        </article>
+        </div>
       ))}
     </>
   );
