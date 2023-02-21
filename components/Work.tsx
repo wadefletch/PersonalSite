@@ -4,7 +4,7 @@ const Work = () => {
       company: 'Atmos',
       companyHref: 'https://atmos.ai',
       title: 'Software Engineer',
-      time: 'September 2022 - Present',
+      time: 'Sep 2022 - Present',
       lines: [
         'Created our flagship products, the ESG Scorecard and Materiality Assessments.',
         'Created a our first monorepo CI/CD Pipeline from scratch using Github Actions and AWS. Automatically finds and prunes local dependencies, and only builds and deploys packages that are strictly necessary.',
@@ -16,7 +16,7 @@ const Work = () => {
       company: 'Atento Capital',
       companyHref: 'https://atentocapital.com',
       title: 'Investments Intern, Atento Fellows Lead',
-      time: 'May 2021 - September 2022',
+      time: 'May 2021 - Sep 2022',
       lines: [
         'Led planning and execution for the second cohort of the Atento Fellows program, including recruiting and managing 9 fellows, allocating a six-figure budget, planning 2 major in-person events, and coordinating with legal team to manage liability.',
         'Fellows sourced 430 companies for the 2022 Atento University Pitch Competition, 7 of which were selected and invited to pitch at the Atento Capital University Pitch Competition Sunny Period (formerly Menstrual Mates) won the competition, received an equity investment from Atento, and relocated to Tulsa, OK in Q3 2022.',
@@ -28,7 +28,7 @@ const Work = () => {
       company: 'Indiana University',
       companyHref: 'https://iu.edu',
       title: 'Undergraduate Instructor (CSCI-H 200)',
-      time: 'August 2020 - May 2021',
+      time: 'Aug 2020 - May 2021',
       lines: [
         'Led biweekly office hours for 200+ students in the "Introduction to Computers and Programming" course, teaching introductory algorithms and data structures in Python.',
         'Taught weekly labs (virtual, due to the pandemic) and graded assignments for an honors section.',
@@ -38,7 +38,7 @@ const Work = () => {
       company: 'OneReq (formerly URx)',
       companyHref: 'https://onereq.com',
       title: 'Software Engineering Intern',
-      time: 'May 2020 - September 2020',
+      time: 'May 2020 - Sep 2020',
       lines: [
         'Created TalentBoard (a technical university recruiting platform used by Facebook, Netflix, eBay, Greylock, and more) using Python (Django).',
         'Worked closely with key stakeholders (notably recruiters) to conduct market research and seek product-market fit.',
