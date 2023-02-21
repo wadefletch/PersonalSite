@@ -49,26 +49,49 @@ const Work = () => {
   return (
     <>
       <h2>Work</h2>
+      <p>
+        I&apos;m currently a software engineer at a venture-backed ESG software
+        startup. Prior to my current role, I spent a year at a venture fund,
+        mostly on a sourcing team. If you&apos;d like to learn more, please take
+        a look at my{' '}
+        <a href="//linkedin.com/in/wadefletch" target="blank" rel="_noreferrer">
+          LinkedIn
+        </a>
+        .
+      </p>
       {work.map((job) => (
-        <article key={`${job.title}_${job.company}`}>
-          <h3 className="font-bold text-lg">
-            <a href={job.companyHref} target="blank" className="no-underline">
-              {job.company}
-            </a>
-          </h3>
-          <div className="sm:flex sm:justify-between">
-            <p>{job.title}</p>
-            <p className="text-gray-500 dark:text-gray-400">{job.time}</p>
+        <article
+          key={`${job.title}_${job.company}`}
+          className="bg-gray-100 dark:bg-gray-700"
+        >
+          <div className="p-4">
+            <div className="sm:flex sm:justify-between sm:items-start">
+              <h3 className="font-bold">
+                <a
+                  href={job.companyHref}
+                  target="blank"
+                  className="no-underline"
+                >
+                  {job.company}
+                </a>
+              </h3>
+              <p className="text-gray-500 dark:text-gray-400 text-sm">
+                {job.time}
+              </p>
+            </div>
+            <div className="text-sm">
+              <p>{job.title}</p>
+            </div>
           </div>
           {job.lines && (
-            <details className="text-sm text-gray-500 dark:text-gray-400">
-              <summary className="group cursor-pointer">
+            <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 dark:bg-gray-600">
+              <summary className="group cursor-pointer px-4 py-2">
                 See more{' '}
                 <span className="inline-block group-hover:translate-x-1 transition">
                   &rarr;
                 </span>
               </summary>
-              <ul className="list-disc ml-5">
+              <ul className="list-disc ml-5 pb-4 px-4 pt-1">
                 {job.lines.map((line, i) => (
                   <li key={i}>{line}</li>
                 ))}
@@ -77,14 +100,6 @@ const Work = () => {
           )}
         </article>
       ))}
-      <a
-        href="//linkedin.com/in/wadefletch"
-        className="p-3 text-sm grid place-content-center no-underline hover:scale-105 transition col-span-1 sm:col-span-2"
-        target="blank"
-        rel="_noreferrer"
-      >
-        <h3 className="">More on LinkedIn &rarr;</h3>
-      </a>
     </>
   );
 };

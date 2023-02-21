@@ -10,7 +10,7 @@ const Projects = () => {
       name: 'CovIntern',
       href: '//covintern.com',
       description:
-        'A remote internship jobs board used by 120k students and recruiters. Featured in Morning Brew, MarketWatch, and more.',
+        'A remote internship jobs board used by 120k students and recruiters. Featured in Marketwatch.',
     },
     {
       name: 'TalentBoard',
@@ -29,15 +29,20 @@ const Projects = () => {
   return (
     <>
       <h2>Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      <p>
+        I&apos;ve worked on a variety of projects: some technical, some
+        community-focused, and some just for fun. Here are a few of my
+        favorites.
+      </p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 grid-rows-2">
         {projects.map((project) => (
           <a
             href={project.href}
             key={project.href}
-            className="bg-gray-100 dark:bg-gray-700 p-5 no-underline hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            className="bg-gray-100 dark:bg-gray-700 p-4 no-underline hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             target="blank"
           >
-            <h3 className="font-bold mb-2">{project.name}</h3>
+            <h3 className="font-bold mb-1">{project.name}</h3>
             <p className="text-sm">{project.description}</p>
           </a>
         ))}

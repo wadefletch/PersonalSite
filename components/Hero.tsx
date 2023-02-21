@@ -1,6 +1,7 @@
 const Hero = () => (
   <>
     <h1 className="font-bold text-4xl">🌳 Wade Fletcher</h1>
+
     <p>
       I&apos;m a software engineer at an{' '}
       <a href="//atmos.ai">ESG software startup</a>.

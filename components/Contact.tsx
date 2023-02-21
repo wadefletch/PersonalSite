@@ -2,8 +2,8 @@ const Contact = () => (
   <>
     <h2>Contact</h2>
     <p>
-      Need my help with something? Want to collaborate? Interested in details of
-      one of my projects? — happy to chat!
+      Need help with something? Want to collaborate? Interested in learning more
+      about one of my projects? I&apos;d be happy to chat!
     </p>
     <p>
       On <a href="//twitter.com/wadefletch">Twitter</a>,{' '}
