@@ -22,7 +22,7 @@ const Projects = () => {
       name: 'Project Dalio',
       href: '//github.com/ecmgiu/projectdalio',
       description:
-        "React/Firebase App used to manage reporting, analytics, and personnel for IU's only student-managed fund.",
+        "React/Firebase App used to manage reporting, analytics, and personnel for IU's student-managed fund.",
     },
   ];
 
