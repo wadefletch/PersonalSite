@@ -28,7 +28,7 @@ const Projects = () => {
 
   return (
     <>
-      <h2>Projects</h2>
+      <h2 data-content="Projects">Projects</h2>
       <p>
         I&apos;ve worked on a variety of projects: some technical, some
         community-focused, and some just for fun. Here are a few of my
@@ -39,7 +39,7 @@ const Projects = () => {
           <a
             href={project.href}
             key={project.href}
-            className="bg-gray-100 dark:bg-gray-700 p-4 no-underline hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            className="bg-gray-100 border border-gray-300 dark:bg-gray-700 p-4 no-underline hover:scale-105 hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             target="blank"
           >
             <h3 className="font-bold mb-1">{project.name}</h3>
