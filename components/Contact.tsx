@@ -14,8 +14,8 @@ const Contact = () => (
     </p>
     <p>
       You can also email me at{' '}
-      <span className="bg-gray-100 dark:bg-gray-900 p-1 whitespace-nowrap">
-        hello at wadefletcher dot com
+      <span className="bg-gray-100 dark:bg-gray-900 p-1">
+        hello&nbsp;at&nbsp;wadefletcher&nbsp;dot&nbsp;com
       </span>
       .
     </p>
