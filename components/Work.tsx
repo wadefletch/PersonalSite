@@ -85,10 +85,7 @@ const Work = () => {
           {job.lines && (
             <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 border-gray-300 border-t dark:border-gray-700 dark:bg-gray-900">
               <summary className="group cursor-pointer px-4 py-2">
-                See more{' '}
-                <span className="inline-block group-hover:translate-x-1 transition">
-                  &rarr;
-                </span>
+                See more
               </summary>
               <ul className="list-disc ml-5 pb-4 px-4 pt-1">
                 {job.lines.map((line, i) => (

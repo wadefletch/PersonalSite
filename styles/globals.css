@@ -30,14 +30,6 @@
     content: attr(data-content);
   }
 
-  details > summary {
-    list-style-type: '';
-  }
-
-  details[open] > summary {
-    list-style-type: '';
-  }
-
   details[open] > summary:before {
     transform: rotate(90deg);
   }
