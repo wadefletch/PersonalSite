@@ -6,6 +6,7 @@ const Work = () => {
       title: 'Software Engineer',
       time: 'Sep 2022 - Present',
       lines: [
+        'Led 0 to 1 initial architecture and development of the Atmos Platform, structuring both our Express backend and React frontend to be modular and scalable for future team and customer growth.',
         'Created our flagship products, the ESG Scorecard and Materiality Assessments.',
         'Created a our first monorepo CI/CD Pipeline from scratch using Github Actions and AWS. Automatically finds and prunes local dependencies, and only builds and deploys packages that are strictly necessary.',
         'Migrated our infrastructure from a wonky DigitalOcean-managed YAML schema to Terraform-powered AWS. Used Docker and ECS to containerize and deploy our Express (node) API and a Cloudfront CDN to serve the React frontend worldwide. (Also configured monitoring, backups, VPC, subnets, and other AWS minutia.)',
