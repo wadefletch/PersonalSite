@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </style>
       <Component {...pageProps} />
-      <Analytics />
+      {process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' && <Analytics />}
     </>
   );
 }
