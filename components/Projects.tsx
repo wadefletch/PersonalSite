@@ -2,25 +2,25 @@ const Projects = () => {
   const projects = [
     {
       name: 'UndercoverVC',
-      href: '//undercover.vc',
+      href: 'https://undercover.vc',
       description:
         'Student Venture Network connecting 14+ partner funds with students on 25+ underestimated campuses.',
     },
     {
       name: 'CovIntern',
-      href: '//covintern.com',
+      href: 'https://covintern.com',
       description:
         'A remote internship jobs board used by 120k students and recruiters. Featured in Marketwatch.',
     },
     {
       name: 'TalentBoard',
-      href: '//talentboard.io',
+      href: 'https://talentboard.io',
       description:
         'Technical University Recruiting Platform used by Facebook, Netflix, eBay, Greylock, and more.',
     },
     {
       name: 'Project Dalio',
-      href: '//github.com/ecmgiu/projectdalio',
+      href: 'https://github.com/ecmgiu/projectdalio',
       description:
         "React/Firebase App used to manage reporting, analytics, and personnel for IU's student-managed fund.",
     },
@@ -47,12 +47,14 @@ const Projects = () => {
           </a>
         ))}
       </div>
-      {/* <Link
-          href={'/'}
-          className="p-3 text-sm grid place-content-center no-underline hover:scale-105 transition col-span-1 sm:col-span-2"
-        >
-          <h3 className="">More Projects &rarr;</h3>
-        </Link> */}
+      {/*
+      <Link 
+        href={'/'}
+        className="p-3 text-sm grid place-content-center no-underline hover:scale-105 transition col-span-1 sm:col-span-2"
+      >
+        <h3 className="">More Projects &rarr;</h3>
+      </Link> 
+      */}
     </>
   );
 };
