@@ -19,8 +19,9 @@ const Work = () => {
       title: 'Investments Intern, Atento Fellows Lead',
       time: 'May 2021 - Sep 2022',
       lines: [
-        'Led planning and execution for the second cohort of the Atento Fellows program, including recruiting and managing 9 fellows, allocating a six-figure budget, planning 2 major in-person events, and coordinating with legal team to manage liability.',
-        'Fellows sourced 430 companies for the 2022 Atento University Pitch Competition, 7 of which were selected and invited to pitch at the Atento Capital University Pitch Competition Sunny Period (formerly Menstrual Mates) won the competition, received an equity investment from Atento, and relocated to Tulsa, OK in Q3 2022.',
+        'Spent two summers of a full-time residential internship and a year of remote work with the venture arm of the George Kaiser Family Foundation.',
+        'Led planning and execution for the second cohort of the Atento Fellows program, including recruiting and managing 9 fellows, allocating a six-figure budget and planning 2 major in-person events.',
+        "Fellows sourced 430 companies for the 2022 Atento University Pitch Competition, 7 of which were selected and invited to pitch at the Atento Capital University Pitch Competition. Sunny Period (formerly Menstrual Mates) won the competition, received an equity investment from Atento, and relocated to Tulsa, OK in Q3 2022 after being sourced and selected through the Fellows' program funnel.",
         'Wrote investment memos and deep-dives about startups considered for potential investment, analyzing their product, team, market sizing, and potential fit with fund and limited-partner goals.',
         "Assisted management in rolling out a national cold sourcing initiative, forming relationships with incubators, accelerators, entrepreneurial support organizations, and other venture funds to expand the fund's deal flow pipeline.",
       ],
@@ -32,7 +33,7 @@ const Work = () => {
       time: 'Aug 2020 - May 2021',
       lines: [
         'Led biweekly office hours for 200+ students in the "Introduction to Computers and Programming" course, teaching introductory algorithms and data structures in Python.',
-        'Taught weekly labs (virtual, due to the pandemic) and graded assignments for an honors section.',
+        'Taught weekly labs (virtual, due to the pandemic) and graded assignments for an honors section of 20 students.',
       ],
     },
     {
@@ -41,8 +42,8 @@ const Work = () => {
       title: 'Software Engineering Intern',
       time: 'May 2020 - Sep 2020',
       lines: [
-        'Created TalentBoard (a technical university recruiting platform used by Facebook, Netflix, eBay, Greylock, and more) using Python (Django).',
-        'Worked closely with key stakeholders (notably recruiters) to conduct market research and seek product-market fit.',
+        'Created TalentBoard, a technical university recruiting platform used by Facebook, Netflix, eBay, Greylock, and more using Python (Django) and TailwindCSS.',
+        'Worked closely with key stakeholders (notably recruiters) to conduct market research, solicit product feedback, and seek product-market fit.',
       ],
     },
   ];
@@ -51,9 +52,9 @@ const Work = () => {
     <>
       <h2 data-content="Work">Work</h2>
       <p>
-        Prior to my work as a software engineer, I spent a year at a venture
-        fund, mostly working on sourcing. If you&apos;d like to learn more,
-        please take a look at my{' '}
+        Before jumping back into software, I spent a year at a venture fund,
+        mostly working on sourcing. If you&apos;d like to learn more, please
+        take a look at my{' '}
         <a href="//linkedin.com/in/wadefletch" target="blank" rel="_noreferrer">
           LinkedIn
         </a>
@@ -75,6 +76,7 @@ const Work = () => {
                   {job.company}
                 </a>
               </h3>
+
               <p className="text-gray-500 dark:text-gray-400 text-sm">
                 {job.time}
               </p>
@@ -83,6 +85,7 @@ const Work = () => {
               <p>{job.title}</p>
             </div>
           </div>
+
           {job.lines && (
             <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 border-gray-400 border-t dark:border-gray-700 dark:bg-gray-900">
               <summary className="group cursor-pointer px-4 py-2">
