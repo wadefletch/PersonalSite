@@ -63,10 +63,10 @@ const Work = () => {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="bg-gray-100 dark:bg-gray-900 overflow-hidden rounded"
+          className="overflow-hidden rounded bg-gray-100 dark:bg-gray-900"
         >
           <div className="p-4">
-            <div className="sm:flex sm:justify-between sm:items-start">
+            <div className="sm:flex sm:items-start sm:justify-between">
               <h3 className="font-bold">
                 <a
                   href={job.companyHref}
@@ -77,7 +77,7 @@ const Work = () => {
                 </a>
               </h3>
 
-              <p className="text-gray-500 dark:text-gray-400 text-sm">
+              <p className="text-sm text-gray-500 dark:text-gray-400">
                 {job.time}
               </p>
             </div>
@@ -87,11 +87,11 @@ const Work = () => {
           </div>
 
           {job.lines && (
-            <details className="text-sm text-gray-600 dark:text-gray-200 bg-gray-200 dark:bg-gray-900">
+            <details className="bg-gray-200 text-sm text-gray-600 dark:bg-gray-900 dark:text-gray-200">
               <summary className="group cursor-pointer px-4 py-2">
                 See more
               </summary>
-              <ul className="list-disc ml-5 pb-4 px-4 pt-1">
+              <ul className="ml-5 list-disc px-4 pb-4 pt-1">
                 {job.lines.map((line, i) => (
                   <li key={i}>{line}</li>
                 ))}

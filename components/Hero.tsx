@@ -1,6 +1,6 @@
 const Hero = () => (
   <>
-    <h1 className="font-bold text-4xl">🌳 Wade Fletcher</h1>
+    <h1 className="text-4xl font-bold">🌳 Wade Fletcher</h1>
 
     <p>
       I&apos;m a software engineer at an{' '}

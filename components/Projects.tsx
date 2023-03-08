@@ -34,15 +34,15 @@ const Projects = () => {
         community-focused, and some just for fun. Here are a few of my
         favorites.
       </p>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 grid-rows-2">
+      <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <a
             href={project.href}
             key={project.href}
-            className="bg-gray-100 dark:bg-gray-900 p-4 no-underline hover:scale-105 transition rounded"
+            className="rounded bg-gray-100 p-4 no-underline transition hover:scale-105 dark:bg-gray-900"
             target="blank"
           >
-            <h3 className="font-bold mb-1">{project.name}</h3>
+            <h3 className="mb-1 font-bold">{project.name}</h3>
             <p className="text-sm dark:text-gray-400">{project.description}</p>
           </a>
         ))}
