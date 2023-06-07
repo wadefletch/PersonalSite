@@ -3,14 +3,16 @@ const Work = () => {
     {
       company: 'Atmos',
       companyHref: 'https://atmos.ai',
-      title: 'Software Engineer',
+      title: 'Engineering Lead',
       time: 'Sep 2022 - Present',
       lines: [
         'Led 0 to 1 initial architecture and development of the Atmos Platform, structuring both our Express backend and React frontend to be modular and scalable for future team and customer growth.',
+        'Hired our first 5 engineers, designing a repeatable interview process and leading the technical interview for each candidate.',
         'Created our flagship products, the ESG Scorecard and Materiality Assessments.',
-        'Created a our first monorepo CI/CD Pipeline from scratch using Github Actions and AWS. Automatically finds and prunes local dependencies, and only builds and deploys packages that are strictly necessary.',
-        'Migrated our infrastructure from a wonky DigitalOcean-managed YAML schema to Terraform-powered AWS. Used Docker and ECS to containerize and deploy our Express (node) API and a Cloudfront CDN to serve the React frontend worldwide. (Also configured monitoring, backups, VPC, subnets, and other AWS minutia.)',
-        'Re-architected our PDF generation infrastructure from a one-off Lambda function into a containerized microservice.',
+        'Created a monorepo CI/CD Pipeline using Github Actions and AWS. Automatically finds and prunes local dependencies, and only builds and deploys packages with necessary changes.',
+        'Migrated our infrastructure from a (wonky) DigitalOcean-managed YAML schema to Terraform-powered AWS. Used Docker and ECS to containerize and deploy our Express (node) API and a Cloudfront CDN to serve our React frontend worldwide. (Also configured monitoring, backups, VPC, subnets, and other AWS minutia.)',
+        'Re-architected PDF generation infrastructure from a one-off Lambda function to a containerized microservice.',
+        'Participated in design reviews, product planning, and customer calls.',
       ],
     },
     {
@@ -63,7 +65,7 @@ const Work = () => {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="overflow-hidden rounded bg-gray-100 dark:bg-gray-900"
+          className="overflow-hidden bg-gray-100 dark:bg-gray-900"
         >
           <div className="p-4">
             <div className="sm:flex sm:items-start sm:justify-between">

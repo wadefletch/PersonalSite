@@ -5,12 +5,12 @@ const Writing = () => {
     date: Date;
   }[] = [
     {
-      title: 'Islands: procedural generation with Python',
+      title: 'Procedurally generating islands with Python',
       slug: 'islands',
       date: new Date(2020, 10, 1),
     },
     {
-      title: 'Mazes: algorithmic generation and traversal with Python',
+      title: 'Generating and solving mazes with Python',
       slug: 'mazes',
       date: new Date(2020, 10, 1),
     },
@@ -20,8 +20,8 @@ const Writing = () => {
       date: new Date(2020, 10, 1),
     },
     {
-      title: 'Letters from the front: student venture in the time of COVID',
-      slug: 'letters-from-the-front',
+      title: 'Idk something about covintern',
+      slug: 'undercovervc',
       date: new Date(2020, 10, 1),
     },
   ];

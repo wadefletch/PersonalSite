@@ -10,7 +10,7 @@ const Projects = () => {
       name: 'CovIntern',
       href: 'https://covintern.com',
       description:
-        'A remote internship jobs board used by 120k students and recruiters. Featured in Marketwatch.',
+        'Remote internship jobs board used by 120k students and recruiters. Featured in Marketwatch.',
     },
     {
       name: 'TalentBoard',
@@ -39,7 +39,7 @@ const Projects = () => {
           <a
             href={project.href}
             key={project.href}
-            className="rounded bg-gray-100 p-4 no-underline transition hover:scale-105 dark:bg-gray-900"
+            className="bg-gray-100 p-4 no-underline transition hover:scale-105 dark:bg-gray-900"
             target="blank"
           >
             <h3 className="mb-1 font-bold">{project.name}</h3>
