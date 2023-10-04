@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply overscroll-y-none text-gray-800 dark:bg-gray-800 dark:text-gray-50;
+    @apply overscroll-y-none text-neutral-700 dark:bg-neutral-800 dark:text-neutral-50;
   }
 }
 
@@ -22,11 +22,11 @@
     /* position the element */
     content: '';
 
-    @apply absolute left-0 right-0 top-1/2 -z-20 block h-[0.12rem] min-h-[1px] bg-gray-800 dark:bg-gray-50;
+    @apply absolute left-0 right-0 top-1/2 -z-20 block h-[0.12rem] min-h-[1px] bg-neutral-800 dark:bg-neutral-50;
   }
 
   h2:before {
-    @apply absolute top-0 left-0 bottom-0 -z-10 block bg-white pr-3 text-white dark:bg-gray-800 dark:text-gray-800;
+    @apply absolute top-0 left-0 bottom-0 -z-10 block bg-white pr-3 text-white dark:bg-neutral-800 dark:text-neutral-800;
     content: attr(data-content);
   }
 

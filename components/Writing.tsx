@@ -37,7 +37,7 @@ const Writing = () => {
       <div className="">
         {posts.map((post) => (
           <div key={post.slug} className="flex items-start">
-            <div className="w-24 text-gray-500">
+            <div className="w-24 text-neutral-500">
               {post.date.toISOString().split('T')[0]}
             </div>
 
