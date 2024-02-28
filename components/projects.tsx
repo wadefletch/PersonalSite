@@ -28,7 +28,7 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className="mt-10 text-xl font-bold">Projects</h2>
+      <h2 className="mt-10 text-2xl font-bold">Projects</h2>
       <p>
         I&apos;ve worked on a variety of projects: some technical, some
         community-focused, and some just for fun. Here are a few of my
@@ -39,11 +39,11 @@ export default function Projects() {
           <a
             href={project.href}
             key={project.href}
-            className="bg-zinc-100 p-5 no-underline hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
+            className="text-secondary-foreground bg-zinc-100 p-5 no-underline hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
             target="blank"
           >
             <h3 className="mb-1 font-bold">{project.name}</h3>
-            <p className="text-sm dark:text-zinc-400">{project.description}</p>
+            <p className="text-sm opacity-70">{project.description}</p>
           </a>
         ))}
       </div>

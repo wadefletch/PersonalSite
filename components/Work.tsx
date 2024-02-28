@@ -53,7 +53,7 @@ export default function Work() {
 
   return (
     <>
-      <h2 className="mt-10 text-xl font-bold">Work</h2>
+      <h2 className="mt-10 text-2xl font-bold">Work</h2>
       <p>
         Before jumping back into software, I spent a year at a venture fund,
         mostly working on sourcing. If you&apos;d like to learn more, please
@@ -66,11 +66,11 @@ export default function Work() {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="overflow-hidden bg-zinc-100 dark:bg-zinc-900"
+          className="overflow-hidden bg-zinc-200 dark:bg-zinc-800"
         >
           <div className="p-4">
             <div className="sm:flex sm:items-start sm:justify-between">
-              <h3 className="font-bold">
+              <h3 className="font-semibold">
                 <a
                   href={job.companyHref}
                   target="blank"
@@ -80,9 +80,7 @@ export default function Work() {
                 </a>
               </h3>
 
-              <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                {job.time}
-              </p>
+              <p className="text-muted-foreground text-sm">{job.time}</p>
             </div>
             <div className="text-sm">
               <p>{job.title}</p>
@@ -90,11 +88,11 @@ export default function Work() {
           </div>
 
           {job.lines && (
-            <details className="bg-zinc-200 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-200">
-              <summary className="group cursor-pointer px-4 py-2">
+            <details className="text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+              <summary className="group cursor-pointer select-none px-4 pb-4">
                 See more
               </summary>
-              <ul className="ml-5 list-disc px-4 pb-4 pt-1">
+              <ul className="ml-4 list-disc px-4 pb-4">
                 {job.lines.map((line, i) => (
                   <li key={i}>{line}</li>
                 ))}

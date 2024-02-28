@@ -1,12 +1,10 @@
 import '../styles/globals.css';
-import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import { cn } from '../lib/utils';
 import Footer from '../components/footer';
-import HeaderLine from '../components/header-line';
-
-const inter = Inter({ subsets: ['latin'] });
+import { ThemeProvider } from '../components/theme-provider';
+import { fontSans } from '@/lib/fonts';
 
 export const siteConfig = {
   title: 'Wade Fletcher',
@@ -50,18 +48,19 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
+
       <body
         className={cn(
-          inter.className,
-          'dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300'
+          fontSans.className,
+          'min-h-screen bg-white font-sans dark:bg-zinc-900 dark:text-zinc-300'
         )}
       >
-        <main className="mx-auto mt-10 flex max-w-2xl flex-col gap-5 px-10 pb-10">
+        <main className="mx-auto mt-10 flex min-h-screen max-w-2xl flex-col gap-5 px-10 pb-10">
           {children}
         </main>
-
         <Footer />
       </body>
+
       {process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' && <Analytics />}
     </html>
   );

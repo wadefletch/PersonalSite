@@ -28,21 +28,22 @@ export default function Writing() {
 
   return (
     <>
-      <h2 className="mt-10 text-xl font-bold">Writing</h2>
+      <h2 className="mt-10 text-2xl font-bold">Writing</h2>
+
       <p>
         I write about software engineering, startups, careers in tech, and
         whatever else is interesting to me on a given day.
       </p>
 
-      <div className="flex flex-col gap-2.5">
+      <div className="flex flex-col gap-1 text-sm">
         {posts.map((post) => (
           <a
             key={post.slug}
             href={`/writing/${post.slug}`}
             className="flex-1 no-underline"
           >
-            <div className="flex items-start bg-zinc-100 p-2 text-sm hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800">
-              <div className="w-24 text-zinc-500">
+            <div className="flex items-start">
+              <div className="w-24 text-zinc-400">
                 {post.date.toISOString().split('T')[0]}
               </div>
               <span>{post.title}</span>

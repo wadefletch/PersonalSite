@@ -6,8 +6,4 @@
   a {
     @apply underline;
   }
-
-  details[open] > summary:before {
-    transform: rotate(90deg);
-  }
 }
