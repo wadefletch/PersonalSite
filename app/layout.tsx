@@ -3,10 +3,9 @@ import { Analytics } from '@vercel/analytics/react';
 import { Metadata } from 'next';
 import { cn } from '../lib/utils';
 import Footer from '../components/footer';
-import { ThemeProvider } from '../components/theme-provider';
 import { fontSans } from '@/lib/fonts';
 
-export const siteConfig = {
+const siteConfig = {
   title: 'Wade Fletcher',
   description:
     'Wade Fletcher is an independent AI researcher and software engineer, working on building scalable retrieval systems for LLMs.',
