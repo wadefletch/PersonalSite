@@ -28,12 +28,14 @@ export default function Projects() {
 
   return (
     <>
-      <h2 className="mt-10 text-2xl font-bold">Projects</h2>
+      <h2 className="mt-10 text-2xl font-semibold">Projects</h2>
+
       <p>
         I&apos;ve worked on a variety of projects: some technical, some
         community-focused, and some just for fun. Here are a few of my
         favorites.
       </p>
+
       <div className="grid grid-cols-1 grid-rows-2 gap-5 sm:grid-cols-2">
         {projects.map((project) => (
           <a

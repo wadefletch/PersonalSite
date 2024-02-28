@@ -1,34 +1,24 @@
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+
+import Link from 'next/link';
+
 export default function Writing() {
-  const posts: {
-    title: string;
-    slug: string;
-    date: Date;
-  }[] = [
-    {
-      title: 'Procedurally generating islands with Python',
-      slug: 'islands',
-      date: new Date(2020, 10, 1),
-    },
-    {
-      title: 'Generating and solving mazes with Python',
-      slug: 'mazes',
-      date: new Date(2020, 10, 1),
-    },
-    {
-      title: 'What I learned growing CovIntern to 100k users in 60 days',
-      slug: 'covintern',
-      date: new Date(2020, 10, 1),
-    },
-    {
-      title: 'Idk something about covintern',
-      slug: 'undercovervc',
-      date: new Date(2020, 10, 1),
-    },
-  ];
+  const blogDir = 'blog';
+  const files = fs.readdirSync(path.join(blogDir));
+  const blogs = files.map((filename) => {
+    const fileContent = fs.readFileSync(path.join(blogDir, filename), 'utf-8');
+    const { data: frontMatter } = matter(fileContent);
+    return {
+      meta: frontMatter,
+      slug: filename.replace('.mdx', ''),
+    };
+  });
 
   return (
     <>
-      <h2 className="mt-10 text-2xl font-bold">Writing</h2>
+      <h2 className="mt-10 text-2xl font-semibold">Writing</h2>
 
       <p>
         I write about software engineering, startups, careers in tech, and
@@ -36,19 +26,17 @@ export default function Writing() {
       </p>
 
       <div className="flex flex-col gap-1 text-sm">
-        {posts.map((post) => (
-          <a
-            key={post.slug}
-            href={`/writing/${post.slug}`}
+        {blogs.map((blog) => (
+          <Link
+            key={blog.slug}
+            href={`/blog/${blog.slug}`}
             className="flex-1 no-underline"
           >
             <div className="flex items-start">
-              <div className="w-24 text-zinc-400">
-                {post.date.toISOString().split('T')[0]}
-              </div>
-              <span>{post.title}</span>
+              <div className="w-24 text-zinc-400">{blog.meta.date}</div>
+              <span>{blog.meta.title}</span>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
     </>

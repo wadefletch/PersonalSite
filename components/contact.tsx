@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <>
-      <h2 className="mt-10 text-2xl font-bold">Contact</h2>
+      <h2 className="mt-10 text-2xl font-semibold">Contact</h2>
       <p>
         Need help with something? Want to collaborate? Interested in learning
         more about one of my projects? I&apos;d be happy to chat!

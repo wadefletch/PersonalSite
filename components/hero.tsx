@@ -10,8 +10,10 @@ export default function Hero() {
 
       <p>
         Most recently, I was the founding engineer (and then CTO) at{' '}
-        <a href="//atmos.ai">Atmos AI</a>, building TurboTax for ESG reporting.
-        In 2024, Atmos was acquired by{' '}
+        <a href="//atmos.ai" className="underline">
+          Atmos AI
+        </a>
+        , building TurboTax for ESG reporting. In 2024, Atmos was acquired by{' '}
         <a href="//wapsustainability.com">a large ESG consulting firm</a>. I
         also created <a href="//covintern.com">CovIntern</a>, a platform that
         helped 120k+ students find remote internships during the COVID-19

@@ -53,7 +53,8 @@ export default function Work() {
 
   return (
     <>
-      <h2 className="mt-10 text-2xl font-bold">Work</h2>
+      <h2 className="mt-10 text-2xl font-semibold">Work</h2>
+
       <p>
         Before jumping back into software, I spent a year at a venture fund,
         mostly working on sourcing. If you&apos;d like to learn more, please
@@ -63,6 +64,7 @@ export default function Work() {
         </a>
         .
       </p>
+
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
