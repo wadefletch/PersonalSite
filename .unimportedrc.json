@@ -1,8 +1,4 @@
 {
-  "ignoreUnresolved": [],
-  "ignoreUnimported": [
-    "next.config.js",
-    "postcss.config.js",
-    "tailwind.config.js"
-  ]
+  "entry": ["app/**/page.tsx", "app/**/layout.tsx"],
+  "ignoreUnimported": ["*.config.js"]
 }

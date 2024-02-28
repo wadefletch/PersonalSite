@@ -1,4 +1,4 @@
-const Projects = () => {
+export default function Projects() {
   const projects = [
     {
       name: 'UndercoverVC',
@@ -59,6 +59,4 @@ const Projects = () => {
       */}
     </>
   );
-};
-
-export default Projects;
+}

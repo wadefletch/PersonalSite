@@ -1,4 +1,4 @@
-const Footer = () => {
+export default function Footer() {
   const commit = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
 
   return (
@@ -26,6 +26,4 @@ const Footer = () => {
       </a>
     </footer>
   );
-};
-
-export default Footer;
+}

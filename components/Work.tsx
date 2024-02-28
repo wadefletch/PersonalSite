@@ -1,11 +1,12 @@
-const Work = () => {
+export default function Work() {
   const work = [
     {
-      company: 'Atmos',
+      company: 'Atmos AI (acq. WAP Sustainability Consulting)',
       companyHref: 'https://atmos.ai',
-      title: 'Engineering Lead',
-      time: 'Sep 2022 - Present',
+      title: 'Founding Engineer, CTO',
+      time: 'Sep 2022 - Feb 2024',
       lines: [
+        'Atmos AI was acquired by WAP Sustainability Consulting in February 2024.',
         'Led 0 to 1 initial architecture and development of the Atmos Platform, structuring both our Express backend and React frontend to be modular and scalable for future team and customer growth.',
         'Hired our first 5 engineers, designing a repeatable interview process and leading the technical interview for each candidate.',
         'Created our flagship products, the ESG Scorecard and Materiality Assessments.',
@@ -104,6 +105,4 @@ const Work = () => {
       ))}
     </>
   );
-};
-
-export default Work;
+}

@@ -1,4 +1,4 @@
-const Writing = () => {
+export default function Writing() {
   const posts: {
     title: string;
     slug: string;
@@ -49,6 +49,4 @@ const Writing = () => {
       </div>
     </>
   );
-};
-
-export default Writing;
+}
