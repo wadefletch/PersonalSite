@@ -50,9 +50,12 @@ export default function Layout({ children }: LayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <body className={cn(inter.className)}>
-        <HeaderLine />
-
+      <body
+        className={cn(
+          inter.className,
+          'dark:bg-zinc-950 text-zinc-700 dark:text-zinc-300'
+        )}
+      >
         <main className="mx-auto mt-10 flex max-w-2xl flex-col gap-5 px-10 pb-10">
           {children}
         </main>

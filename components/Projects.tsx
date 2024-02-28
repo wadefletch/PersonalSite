@@ -28,7 +28,7 @@ export default function Projects() {
 
   return (
     <>
-      <h2 data-content="Projects">Projects</h2>
+      <h2 className="mt-10 text-xl font-bold">Projects</h2>
       <p>
         I&apos;ve worked on a variety of projects: some technical, some
         community-focused, and some just for fun. Here are a few of my
@@ -39,13 +39,11 @@ export default function Projects() {
           <a
             href={project.href}
             key={project.href}
-            className="bg-neutral-100 p-4 no-underline transition hover:scale-105 dark:bg-neutral-900"
+            className="bg-zinc-100 p-5 no-underline hover:bg-zinc-200 dark:bg-zinc-900 dark:hover:bg-zinc-800"
             target="blank"
           >
             <h3 className="mb-1 font-bold">{project.name}</h3>
-            <p className="text-sm dark:text-neutral-400">
-              {project.description}
-            </p>
+            <p className="text-sm dark:text-zinc-400">{project.description}</p>
           </a>
         ))}
       </div>

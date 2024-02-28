@@ -53,7 +53,7 @@ export default function Work() {
 
   return (
     <>
-      <h2 data-content="Work">Work</h2>
+      <h2 className="mt-10 text-xl font-bold">Work</h2>
       <p>
         Before jumping back into software, I spent a year at a venture fund,
         mostly working on sourcing. If you&apos;d like to learn more, please
@@ -66,7 +66,7 @@ export default function Work() {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="overflow-hidden bg-neutral-100 dark:bg-neutral-900"
+          className="overflow-hidden bg-zinc-100 dark:bg-zinc-900"
         >
           <div className="p-4">
             <div className="sm:flex sm:items-start sm:justify-between">
@@ -80,7 +80,7 @@ export default function Work() {
                 </a>
               </h3>
 
-              <p className="text-sm text-neutral-500 dark:text-neutral-400">
+              <p className="text-sm text-zinc-500 dark:text-zinc-400">
                 {job.time}
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function Work() {
           </div>
 
           {job.lines && (
-            <details className="bg-neutral-200 text-sm text-neutral-600 dark:bg-neutral-900 dark:text-neutral-200">
+            <details className="bg-zinc-200 text-sm text-zinc-600 dark:bg-zinc-900 dark:text-zinc-200">
               <summary className="group cursor-pointer px-4 py-2">
                 See more
               </summary>
