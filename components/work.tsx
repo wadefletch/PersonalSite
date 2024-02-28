@@ -68,7 +68,7 @@ export default function Work() {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="overflow-hidden bg-zinc-200 dark:bg-zinc-800"
+          className="overflow-hidden bg-zinc-100 dark:bg-zinc-800"
         >
           <div className="p-4">
             <div className="sm:flex sm:items-start sm:justify-between">
