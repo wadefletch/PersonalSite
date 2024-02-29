@@ -1,8 +1,8 @@
-import Contact from '../components/contact';
 import Hero from '../components/hero';
 import Projects from '../components/projects';
+// import Writing from '@/components/writing';
 import Work from '../components/work';
-// import Writing from '../components/writing';
+import Contact from '../components/contact';
 
 export default function Home(): JSX.Element {
   return (

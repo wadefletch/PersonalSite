@@ -1,0 +1,92 @@
+code[class*='language-'],
+pre[class*='language-'] {
+  /* background */
+  @apply bg-zinc-100 dark:bg-zinc-800;
+
+  /* text */
+  @apply text-zinc-800 dark:text-zinc-400;
+  @apply hyphens-none whitespace-pre break-words text-left font-mono text-sm leading-5;
+  tab-size: 2;
+}
+
+/* Code blocks */
+pre[class*='language-'] {
+  @apply my-2 overflow-auto p-4;
+}
+
+/* Inline code */
+:not(pre) > code[class*='language-'] {
+  @apply whitespace-normal px-2 py-1;
+}
+
+.token.comment,
+.token.prolog,
+.token.cdata {
+  @apply text-zinc-500 dark:text-zinc-400;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.entity {
+  @apply text-zinc-800 dark:text-zinc-300;
+}
+
+.token.attr-name,
+.token.class-name,
+.token.boolean,
+.token.constant,
+.token.number,
+.token.atrule {
+  @apply text-green-600 dark:text-green-400;
+}
+
+.token.keyword {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.token.property,
+.token.tag,
+.token.symbol,
+.token.deleted,
+.token.important {
+  @apply text-orange-600 dark:text-orange-400;
+}
+
+.token.selector,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted,
+.token.regex,
+.token.attr-value,
+.token.attr-value > .token.punctuation {
+  @apply text-yellow-600 dark:text-yellow-400;
+}
+
+.token.variable,
+.token.operator,
+.token.function {
+  @apply text-red-600 dark:text-red-400;
+}
+
+.token.url {
+  @apply text-pink-600 dark:text-pink-400;
+}
+
+/* General */
+.token.bold {
+  @apply font-bold;
+}
+
+.token.comment {
+  /* Implicitly, this is also applied to .token.italic */
+  @apply italic;
+}
+
+.token.entity {
+  @apply cursor-help;
+}
+
+.token.namespace {
+  @apply opacity-80;
+}

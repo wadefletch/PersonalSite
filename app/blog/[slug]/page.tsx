@@ -5,6 +5,10 @@ import { ArrowLeft } from 'lucide-react';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
 import remarkGfm from 'remark-gfm';
+import rehypePrism from '@mapbox/rehype-prism';
+import '@/styles/prism.css';
+import { cn } from '@/lib/utils';
+import { Tweet } from 'react-tweet';
 
 export async function generateStaticParams() {
   const files = fs.readdirSync(path.join('blog'));
@@ -40,21 +44,14 @@ export async function generateMetadata({ params }: any) {
   };
 }
 
-const options = {
-  mdxOptions: {
-    remarkPlugins: [remarkGfm],
-    rehypePlugins: [],
-  },
-};
-
 function Back() {
   return (
     <div>
       <Link
         href="/"
-        className="inline-flex items-center justify-center bg-zinc-800 px-2 py-1 font-medium no-underline"
+        className="inline-flex items-center justify-center bg-zinc-100 px-2 py-1 no-underline hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
       >
-        <ArrowLeft className="mr-1 h-4 w-4" strokeWidth={3} /> Back
+        <ArrowLeft className="mr-1 h-4 w-4" strokeWidth={2} /> Back
       </Link>
     </div>
   );
@@ -63,12 +60,39 @@ function Back() {
 export default function Post({ params }: any) {
   const { frontMatter, content } = getPost(params);
 
+  const options = {
+    mdxOptions: {
+      remarkPlugins: [remarkGfm],
+      rehypePlugins: [rehypePrism],
+    },
+  };
+
+  const components = {
+    Tweet,
+    h1: (props: any) => <h1 {...props} className="text-4xl font-bold" />,
+    h2: (props: any) => (
+      <h2 {...props} className="mt-10 text-2xl font-semibold" />
+    ),
+    h3: (props: any) => (
+      <h3 {...props} className="mt-8 text-xl font-semibold" />
+    ),
+    h4: (props: any) => (
+      <h4 {...props} className="mt-6 text-lg font-semibold" />
+    ),
+    pre: (props: any) => (
+      <pre
+        {...props}
+        className={cn(props.className, 'overflow-x-auto bg-zinc-500')}
+      />
+    ),
+  };
+
   return (
     <article className="post space-y-5">
       <Back />
       <h1 className="text-4xl font-bold">{frontMatter.title}</h1>
       {/* @ts-expect-error Server Component*/}
-      <MDXRemote source={content} options={options} />
+      <MDXRemote source={content} options={options} components={components} />
       <Back />
     </article>
   );
