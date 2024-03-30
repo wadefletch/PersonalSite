@@ -3,7 +3,7 @@ export default function Work() {
     {
       company: 'Atmos AI (acq. WAP Sustainability Consulting)',
       companyHref: 'https://atmos.ai',
-      title: 'Founding Engineer, CTO',
+      title: 'Founding Engineer, Head of Engineering',
       time: 'Sep 2022 - Feb 2024',
       lines: [
         'Atmos AI was acquired by WAP Sustainability Consulting in February 2024.',
