@@ -1,6 +1,17 @@
 export default function Work() {
   const work = [
     {
+      company: 'Tractorbeam AI',
+      companyHref: 'https://tractorbeam.ai',
+      title: 'CEO, Co-Founder',
+      time: 'March 2024 - Present',
+      lines: [
+        'Co-founded Tractorbeam AI, a startup building a new knowledge graph store for use in generative AI applications.',
+        'Designed and implemented the initial product, building a new DBMS from scratch.',
+        'Led the company from ideation to launch, developing a product and marketing strategy, and securing initial customers.',
+      ],
+    },
+    {
       company: 'Atmos AI (acq. WAP Sustainability Consulting)',
       companyHref: 'https://atmos.ai',
       title: 'Founding Engineer, Head of Engineering',
@@ -24,7 +35,7 @@ export default function Work() {
       lines: [
         'Spent two summers of a full-time residential internship and a year of remote work with the venture arm of the George Kaiser Family Foundation.',
         'Led planning and execution for the second cohort of the Atento Fellows program, including recruiting and managing 9 fellows, allocating a six-figure budget and planning 2 major in-person events.',
-        "Fellows sourced 430 companies for the 2022 Atento University Pitch Competition, 7 of which were selected and invited to pitch at the Atento Capital University Pitch Competition. Sunny Period (formerly Menstrual Mates) won the competition, received an equity investment from Atento, and relocated to Tulsa, OK in Q3 2022 after being sourced and selected through the Fellows' program funnel.",
+        "Fellows sourced 430 companies for the 2022 Atento University Pitch Competition, 7 of which were selected and invited to pitch at the Atento Capital University Pitch Competition. Sunny Period (formerly Menstrual Mates) won the competition, received an equity investment from Atento, and relocated to Tulsa, OK in Q3 2022 after being sourced and selected through the Fellows' program.",
         'Wrote investment memos and deep-dives about startups considered for potential investment, analyzing their product, team, market sizing, and potential fit with fund and limited-partner goals.',
         "Assisted management in rolling out a national cold sourcing initiative, forming relationships with incubators, accelerators, entrepreneurial support organizations, and other venture funds to expand the fund's deal flow pipeline.",
       ],
@@ -34,21 +45,21 @@ export default function Work() {
       companyHref: 'https://iu.edu',
       title: 'Undergraduate Instructor (CSCI-H 200)',
       time: 'Aug 2020 - May 2021',
-      lines: [
-        'Led biweekly office hours for 200+ students in the "Introduction to Computers and Programming" course, teaching introductory algorithms and data structures in Python.',
-        'Taught weekly labs (virtual, due to the pandemic) and graded assignments for an honors section of 20 students.',
-      ],
+      // lines: [
+      //   'Led biweekly office hours for 200+ students in the "Introduction to Computers and Programming" course, teaching introductory algorithms and data structures in Python.',
+      //   'Taught weekly labs (virtual, due to the pandemic) and graded assignments for an honors section of 20 students.',
+      // ],
     },
-    {
-      company: 'OneReq (formerly URx)',
-      companyHref: 'https://onereq.com',
-      title: 'Software Engineering Intern',
-      time: 'May 2020 - Sep 2020',
-      lines: [
-        'Created TalentBoard, a technical university recruiting platform used by Facebook, Netflix, eBay, Greylock, and more using Python (Django) and TailwindCSS.',
-        'Worked closely with key stakeholders (notably recruiters) to conduct market research, solicit product feedback, and seek product-market fit.',
-      ],
-    },
+    // {
+    //   company: 'OneReq (formerly URx)',
+    //   companyHref: 'https://onereq.com',
+    //   title: 'Software Engineering Intern',
+    //   time: 'May 2020 - Sep 2020',
+    //   lines: [
+    //     'Created TalentBoard, a technical university recruiting platform used by Facebook, Netflix, eBay, Greylock, and more using Python (Django) and TailwindCSS.',
+    //     'Worked closely with key stakeholders (notably recruiters) to conduct market research, solicit product feedback, and seek product-market fit.',
+    //   ],
+    // },
   ];
 
   return (
@@ -56,9 +67,9 @@ export default function Work() {
       <h2 className="mt-10 text-2xl font-semibold">Work</h2>
 
       <p>
-        Before jumping back into software, I spent a year at a venture fund,
-        mostly working on sourcing. If you&apos;d like to learn more, please
-        take a look at my{' '}
+        I&apos;m a startup software engineer, with experience at the earliest
+        stages and in venture. If you&apos;d like to learn more, please take a
+        look at my{' '}
         <a href="//linkedin.com/in/wadefletch" target="blank" rel="_noreferrer">
           LinkedIn
         </a>

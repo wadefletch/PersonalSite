@@ -1,11 +1,13 @@
 export default function Hero() {
   return (
     <>
-      <h1 className="text-4xl font-bold">Wade Fletcher</h1>
+      <h1 className="text-4xl font-bold sm:pt-10">Wade Fletcher</h1>
 
       <p>
-        I&apos;m a software engineer and AI hacker, working on building scalable
-        retrieval systems for LLMs.
+        I&apos;m a co-founder of <a href="//tractorbeam.ai">Tractorbeam AI</a>,
+        building the reasoning and memory layer for AI applications. I&apos;m
+        also a software engineer with experience at the earliest stages of
+        startups.
       </p>
 
       <p>
