@@ -4,6 +4,7 @@ import { Metadata } from 'next';
 import { cn } from '../lib/utils';
 import Footer from '../components/footer';
 import { fontSans } from '@/lib/fonts';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const siteConfig = {
   title: 'Wade Fletcher',
@@ -60,7 +61,12 @@ export default function Layout({ children }: LayoutProps) {
         <Footer />
       </body>
 
-      {process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' && <Analytics />}
+      {process.env.NEXT_PUBLIC_VERCEL_ENV === 'production' && (
+        <>
+          <Analytics />
+          <SpeedInsights />
+        </>
+      )}
     </html>
   );
 }

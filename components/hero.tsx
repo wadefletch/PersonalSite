@@ -23,8 +23,8 @@ export default function Hero() {
       </p>
 
       <p>
-        I&apos;m interested in AI, scaling technical teams, early-stage
-        investing, and the intersection of technology and finance.
+        I&apos;m interested in systems, databases, LLMs, and early-stage
+        investing. I live in Chicago, Illinois but grew up in South Carolina.
       </p>
     </>
   );
