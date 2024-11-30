@@ -11,11 +11,11 @@ export default function Contact() {
         <a href="//linkedin.com/in/wadefletch">LinkedIn</a>,{' '}
         <a href="//github.com/wadefletch">GitHub</a>, and{' '}
         <a href="//news.ycombinator.com/user?id=wadefletch">HN</a>, I am{' '}
-        <span className="bg-zinc-200 p-1 dark:bg-zinc-800">wadefletch</span>.
+        <span className="bg-gray-200 p-1 dark:bg-gray-800">wadefletch</span>.
       </p>
       <p>
         You can also email me at{' '}
-        <span className="bg-zinc-200 p-1 dark:bg-zinc-800">
+        <span className="bg-gray-200 p-1 dark:bg-gray-800">
           hello&nbsp;at&nbsp;wadefletcher&nbsp;dot&nbsp;com
         </span>
         .

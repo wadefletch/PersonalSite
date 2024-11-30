@@ -79,7 +79,7 @@ export default function Work() {
       {work.map((job) => (
         <div
           key={`${job.title}_${job.company}`}
-          className="overflow-hidden bg-zinc-100 dark:bg-zinc-800"
+          className="overflow-hidden bg-gray-100 dark:bg-gray-800"
         >
           <div className="p-4">
             <div className="sm:flex sm:items-start sm:justify-between">
@@ -101,7 +101,7 @@ export default function Work() {
           </div>
 
           {job.lines && (
-            <details className="text-sm text-zinc-600 dark:bg-zinc-800 dark:text-zinc-400">
+            <details className="text-sm text-gray-600 dark:bg-gray-800 dark:text-gray-400">
               <summary className="group cursor-pointer select-none px-4 pb-4">
                 See more
               </summary>

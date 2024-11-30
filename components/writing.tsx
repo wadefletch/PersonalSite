@@ -33,7 +33,7 @@ export default function Writing() {
             className="flex-1 no-underline"
           >
             <div className="flex items-start">
-              <div className="w-24 text-zinc-400">{blog.meta.date}</div>
+              <div className="w-24 text-gray-400">{blog.meta.date}</div>
               <span>{blog.meta.title}</span>
             </div>
           </Link>

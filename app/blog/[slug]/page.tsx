@@ -49,7 +49,7 @@ function Back() {
     <div>
       <Link
         href="/"
-        className="inline-flex items-center justify-center bg-zinc-100 px-2 py-1 no-underline hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+        className="inline-flex items-center justify-center bg-gray-100 px-2 py-1 no-underline hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
       >
         <ArrowLeft className="mr-1 h-4 w-4" strokeWidth={2} /> Back
       </Link>
@@ -82,7 +82,7 @@ export default function Post({ params }: any) {
     pre: (props: any) => (
       <pre
         {...props}
-        className={cn(props.className, 'overflow-x-auto bg-zinc-500')}
+        className={cn(props.className, 'overflow-x-auto bg-gray-500')}
       />
     ),
   };

@@ -1,10 +1,10 @@
 code[class*='language-'],
 pre[class*='language-'] {
   /* background */
-  @apply bg-zinc-100 dark:bg-zinc-800;
+  @apply bg-gray-100 dark:bg-gray-800;
 
   /* text */
-  @apply text-zinc-800 dark:text-zinc-400;
+  @apply text-gray-800 dark:text-gray-400;
   @apply hyphens-none whitespace-pre break-words text-left font-mono text-sm leading-5;
   tab-size: 2;
 }
@@ -22,13 +22,13 @@ pre[class*='language-'] {
 .token.comment,
 .token.prolog,
 .token.cdata {
-  @apply text-zinc-500 dark:text-zinc-400;
+  @apply text-gray-500 dark:text-gray-400;
 }
 
 .token.doctype,
 .token.punctuation,
 .token.entity {
-  @apply text-zinc-800 dark:text-zinc-300;
+  @apply text-gray-800 dark:text-gray-300;
 }
 
 .token.attr-name,

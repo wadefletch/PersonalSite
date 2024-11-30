@@ -41,7 +41,7 @@ export default function Projects() {
           <a
             href={project.href}
             key={project.href}
-            className="text-secondary-foreground bg-zinc-100 p-5 no-underline hover:bg-zinc-200 dark:bg-zinc-800 dark:hover:bg-zinc-700"
+            className="text-secondary-foreground bg-gray-100 p-5 no-underline hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700"
             target="blank"
           >
             <h3 className="mb-1 font-bold">{project.name}</h3>

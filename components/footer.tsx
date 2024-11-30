@@ -2,7 +2,7 @@ export default function Footer() {
   const commit = process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_SHA;
 
   return (
-    <footer className="mx-auto flex max-w-2xl items-center justify-center gap-1 p-5 text-sm text-zinc-400">
+    <footer className="mx-auto flex max-w-2xl items-center justify-center gap-1 p-5 text-sm text-gray-400">
       <a href="//creativecommons.org/licenses/by/4.0/" className="no-underline">
         CC BY 4.0
       </a>

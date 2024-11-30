@@ -52,7 +52,7 @@ export default function Layout({ children }: LayoutProps) {
       <body
         className={cn(
           fontSans.className,
-          'min-h-screen bg-white font-sans antialiased dark:bg-zinc-900 dark:text-zinc-300'
+          'min-h-screen bg-white font-sans antialiased dark:bg-gray-900 dark:text-gray-300'
         )}
       >
         <main className="mx-auto mt-10 flex min-h-screen max-w-2xl flex-col gap-5 px-10 pb-10">
